@@ -2,11 +2,11 @@ Unity Editor version:    2020.3.26f1 (7298b473bc1a)
 Branch:                  2020.3/staging
 Build type:              Release
 Batch mode:              YES
-macOS version:           Version 12.3.1 (Build 21E258)
-Darwin version:          21.4.0
+macOS version:           Version 14.1.2 (Build 23B92)
+Darwin version:          23.1.0
 Architecture:            x86_64
 Running under Rosetta:   NO
-Available memory:        16384 MB
+Available memory:        8192 MB
 Using pre-set license
 Pro License: NO
 
@@ -18,174 +18,110 @@ COMMAND LINE ARGUMENTS:
 -name
 AssetImportWorker0
 -projectPath
-/Users/taralee/Desktop/school/fourth year /turbo-kart-dash-racer
+/Users/braydenthompson/turbo-kart-dash-racer
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-57692
-Successfully changed project path to: /Users/taralee/Desktop/school/fourth year /turbo-kart-dash-racer
-/Users/taralee/Desktop/school/fourth year /turbo-kart-dash-racer
+53314
+Successfully changed project path to: /Users/braydenthompson/turbo-kart-dash-racer
+/Users/braydenthompson/turbo-kart-dash-racer
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 171.24 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 40.39 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.26f1 (7298b473bc1a)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path /Users/taralee/Desktop/school/fourth year /turbo-kart-dash-racer/Assets
+[Subsystems] Discovering subsystems at path /Users/braydenthompson/turbo-kart-dash-racer/Assets
 GfxDevice: creating device client; threaded=0
-2024-03-28 12:27:27.623 Unity[35840:4553338] Color LCD preferred device: Intel(R) UHD Graphics 630 (low power)
-2024-03-28 12:27:27.623 Unity[35840:4553338] Metal devices available: 2
-2024-03-28 12:27:27.624 Unity[35840:4553338] 0: AMD Radeon Pro 5300M (high power)
-2024-03-28 12:27:27.624 Unity[35840:4553338] 1: Intel(R) UHD Graphics 630 (low power)
-2024-03-28 12:27:27.624 Unity[35840:4553338] Using device AMD Radeon Pro 5300M (high power)
-Initializing Metal device caps: AMD Radeon Pro 5300M
+2024-03-28 13:40:48.485 Unity[17571:529197] Color LCD preferred device: Intel(R) Iris(TM) Plus Graphics (low power)
+2024-03-28 13:40:48.485 Unity[17571:529197] Metal devices available: 1
+2024-03-28 13:40:48.485 Unity[17571:529197] 0: Intel(R) Iris(TM) Plus Graphics (low power)
+2024-03-28 13:40:48.486 Unity[17571:529197] Using device Intel(R) Iris(TM) Plus Graphics (low power)
+Initializing Metal device caps: Intel(R) Iris(TM) Plus Graphics
 Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = '/Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56840
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56571
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/2020.3.26f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Registered in 0.003533 seconds.
+Register platform support module: /Applications/Unity/Hub/Editor/2020.3.26f1/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.000738 seconds.
+Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 45.80 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 39.85 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.881 seconds
+- Completed reload, in  0.685 seconds
 Domain Reload Profiling:
-	ReloadAssembly (881ms)
-		BeginReloadAssembly (50ms)
+	ReloadAssembly (685ms)
+		BeginReloadAssembly (39ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (723ms)
-			LoadAssemblies (51ms)
+		EndReloadAssembly (566ms)
+			LoadAssemblies (39ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (259ms)
+			SetupTypeCache (219ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (58ms)
-			SetupLoadedEditorAssemblies (275ms)
+			RebuildScriptCaches (39ms)
+			SetupLoadedEditorAssemblies (216ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
+				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (46ms)
-				BeforeProcessingInitializeOnLoad (15ms)
-				ProcessInitializeOnLoadAttributes (160ms)
-				ProcessInitializeOnLoadMethodAttributes (47ms)
+				RefreshPlugins (40ms)
+				BeforeProcessingInitializeOnLoad (31ms)
+				ProcessInitializeOnLoadAttributes (108ms)
+				ProcessInitializeOnLoadMethodAttributes (30ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.000416 seconds.
-Required property 'name' not set (Packages/com.unity.services.core/Editor/Core/Unity.Services.Core.Editor.asmdef)
-Required property 'name' not set (Packages/com.unity.ide.vscode/Editor/Unity.com.unity.vscode.Editor.asmdef)
-Required property 'name' not set (Packages/com.unity.textmeshpro/Tests/Runtime/Unity.TextMeshPro.Tests.asmdef)
-Required property 'name' not set (Packages/com.unity.textmeshpro/Scripts/Editor/Unity.TextMeshPro.Editor.asmdef)
-Required property 'name' not set (Packages/com.unity.ide.visualstudio/Editor/com.unity.ide.visualstudio.asmdef)
-Required property 'name' not set (Packages/com.unity.test-framework/UnityEngine.TestRunner/UnityEngine.TestRunner.asmdef)
-Required property 'name' not set (Packages/com.unity.ugui/Tests/Runtime/UnityEngine.UI.Tests.asmdef)
-Required property 'name' not set (Packages/com.unity.timeline/Editor/Unity.Timeline.Editor.asmdef)
-Required property 'name' not set (Packages/com.unity.timeline/Runtime/Unity.Timeline.asmdef)
-Required property 'name' not set (Packages/com.unity.textmeshpro/Scripts/Runtime/Unity.TextMeshPro.asmdef)
-Required property 'name' not set (Packages/com.unity.textmeshpro/Tests/Editor/Unity.TextMeshPro.Editor.Tests.asmdef)
-Required property 'name' not set (Packages/com.unity.collab-proxy/Editor/Collaborate/Unity.CollabProxy.Editor.asmdef)
-Required property 'name' not set (Packages/com.unity.collab-proxy/Tests/Editor/Collaborate/Unity.CollabProxy.EditorTests.asmdef)
-Required property 'name' not set (Packages/com.unity.test-framework/UnityEditor.TestRunner/UnityEditor.TestRunner.asmdef)
-Required property 'name' not set (Packages/com.unity.ugui/Tests/Editor/UnityEditor.UI.EditorTests.asmdef)
-Required property 'name' not set (Packages/com.unity.nuget.newtonsoft-json/Tests/Editor/Unity.Nuget.NewtonsoftJson.EditorTests.asmdef)
-Required property 'name' not set (Packages/com.unity.ugui/Editor/UnityEditor.UI.asmdef)
-Required property 'name' not set (Packages/com.unity.collab-proxy/Editor/PlasticSCM/Unity.PlasticSCM.Editor.asmdef)
-Required property 'name' not set (Packages/com.unity.collab-proxy/Tests/Editor/PlasticSCM/Unity.PlasticSCM.EditorTests.asmdef)
-Required property 'name' not set (Packages/com.unity.timeline/DocCodeExamples/DocCodeExamples.asmdef)
-Required property 'name' not set (Packages/com.unity.ide.rider/Rider/Editor/com.unity.ide.rider.asmdef)
-Required property 'name' not set (Packages/com.unity.ugui/Runtime/UnityEngine.UI.asmdef)
-Required property 'name' not set (Packages/com.unity.services.core/Editor/Core/Unity.Services.Core.Editor.asmdef)
-Required property 'name' not set (Packages/com.unity.ide.vscode/Editor/Unity.com.unity.vscode.Editor.asmdef)
-Required property 'name' not set (Packages/com.unity.textmeshpro/Tests/Runtime/Unity.TextMeshPro.Tests.asmdef)
-Required property 'name' not set (Packages/com.unity.textmeshpro/Scripts/Editor/Unity.TextMeshPro.Editor.asmdef)
-Required property 'name' not set (Packages/com.unity.ide.visualstudio/Editor/com.unity.ide.visualstudio.asmdef)
-Required property 'name' not set (Packages/com.unity.test-framework/UnityEngine.TestRunner/UnityEngine.TestRunner.asmdef)
-Required property 'name' not set (Packages/com.unity.ugui/Tests/Runtime/UnityEngine.UI.Tests.asmdef)
-Required property 'name' not set (Packages/com.unity.timeline/Editor/Unity.Timeline.Editor.asmdef)
-Required property 'name' not set (Packages/com.unity.timeline/Runtime/Unity.Timeline.asmdef)
-Required property 'name' not set (Packages/com.unity.textmeshpro/Scripts/Runtime/Unity.TextMeshPro.asmdef)
-Required property 'name' not set (Packages/com.unity.textmeshpro/Tests/Editor/Unity.TextMeshPro.Editor.Tests.asmdef)
-Required property 'name' not set (Packages/com.unity.collab-proxy/Editor/Collaborate/Unity.CollabProxy.Editor.asmdef)
-Required property 'name' not set (Packages/com.unity.collab-proxy/Tests/Editor/Collaborate/Unity.CollabProxy.EditorTests.asmdef)
-Required property 'name' not set (Packages/com.unity.test-framework/UnityEditor.TestRunner/UnityEditor.TestRunner.asmdef)
-Required property 'name' not set (Packages/com.unity.ugui/Tests/Editor/UnityEditor.UI.EditorTests.asmdef)
-Required property 'name' not set (Packages/com.unity.nuget.newtonsoft-json/Tests/Editor/Unity.Nuget.NewtonsoftJson.EditorTests.asmdef)
-Required property 'name' not set (Packages/com.unity.ugui/Editor/UnityEditor.UI.asmdef)
-Required property 'name' not set (Packages/com.unity.collab-proxy/Editor/PlasticSCM/Unity.PlasticSCM.Editor.asmdef)
-Required property 'name' not set (Packages/com.unity.collab-proxy/Tests/Editor/PlasticSCM/Unity.PlasticSCM.EditorTests.asmdef)
-Required property 'name' not set (Packages/com.unity.timeline/DocCodeExamples/DocCodeExamples.asmdef)
-Required property 'name' not set (Packages/com.unity.ide.rider/Rider/Editor/com.unity.ide.rider.asmdef)
-Required property 'name' not set (Packages/com.unity.ugui/Runtime/UnityEngine.UI.asmdef)
+Registered in 0.001849 seconds.
 Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.40 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.36 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Required property 'name' not set (Packages/com.unity.services.core/Editor/Core/Unity.Services.Core.Editor.asmdef)
-Required property 'name' not set (Packages/com.unity.ide.vscode/Editor/Unity.com.unity.vscode.Editor.asmdef)
-Required property 'name' not set (Packages/com.unity.textmeshpro/Tests/Runtime/Unity.TextMeshPro.Tests.asmdef)
-Required property 'name' not set (Packages/com.unity.textmeshpro/Scripts/Editor/Unity.TextMeshPro.Editor.asmdef)
-Required property 'name' not set (Packages/com.unity.ide.visualstudio/Editor/com.unity.ide.visualstudio.asmdef)
-Required property 'name' not set (Packages/com.unity.test-framework/UnityEngine.TestRunner/UnityEngine.TestRunner.asmdef)
-Required property 'name' not set (Packages/com.unity.ugui/Tests/Runtime/UnityEngine.UI.Tests.asmdef)
-Required property 'name' not set (Packages/com.unity.timeline/Editor/Unity.Timeline.Editor.asmdef)
-Required property 'name' not set (Packages/com.unity.timeline/Runtime/Unity.Timeline.asmdef)
-Required property 'name' not set (Packages/com.unity.textmeshpro/Scripts/Runtime/Unity.TextMeshPro.asmdef)
-Required property 'name' not set (Packages/com.unity.textmeshpro/Tests/Editor/Unity.TextMeshPro.Editor.Tests.asmdef)
-Required property 'name' not set (Packages/com.unity.collab-proxy/Editor/Collaborate/Unity.CollabProxy.Editor.asmdef)
-Required property 'name' not set (Packages/com.unity.collab-proxy/Tests/Editor/Collaborate/Unity.CollabProxy.EditorTests.asmdef)
-Required property 'name' not set (Packages/com.unity.test-framework/UnityEditor.TestRunner/UnityEditor.TestRunner.asmdef)
-Required property 'name' not set (Packages/com.unity.ugui/Tests/Editor/UnityEditor.UI.EditorTests.asmdef)
-Required property 'name' not set (Packages/com.unity.nuget.newtonsoft-json/Tests/Editor/Unity.Nuget.NewtonsoftJson.EditorTests.asmdef)
-Required property 'name' not set (Packages/com.unity.ugui/Editor/UnityEditor.UI.asmdef)
-Required property 'name' not set (Packages/com.unity.collab-proxy/Editor/PlasticSCM/Unity.PlasticSCM.Editor.asmdef)
-Required property 'name' not set (Packages/com.unity.collab-proxy/Tests/Editor/PlasticSCM/Unity.PlasticSCM.EditorTests.asmdef)
-Required property 'name' not set (Packages/com.unity.timeline/DocCodeExamples/DocCodeExamples.asmdef)
-Required property 'name' not set (Packages/com.unity.ide.rider/Rider/Editor/com.unity.ide.rider.asmdef)
-Required property 'name' not set (Packages/com.unity.ugui/Runtime/UnityEngine.UI.asmdef)
 Mono: successfully reloaded assembly
-- Completed reload, in  1.307 seconds
+- Completed reload, in  1.228 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1309ms)
-		BeginReloadAssembly (198ms)
+	ReloadAssembly (1228ms)
+		BeginReloadAssembly (163ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
+			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (30ms)
-		EndReloadAssembly (1021ms)
-			LoadAssemblies (37ms)
+			CreateAndSetChildDomain (35ms)
+		EndReloadAssembly (993ms)
+			LoadAssemblies (81ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (251ms)
+			SetupTypeCache (375ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (320ms)
-			SetupLoadedEditorAssemblies (243ms)
+			RebuildScriptCaches (59ms)
+			SetupLoadedEditorAssemblies (342ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (37ms)
-				ProcessInitializeOnLoadAttributes (191ms)
-				ProcessInitializeOnLoadMethodAttributes (6ms)
+				BeforeProcessingInitializeOnLoad (77ms)
+				ProcessInitializeOnLoadAttributes (247ms)
+				ProcessInitializeOnLoadMethodAttributes (10ms)
 				AfterProcessingInitializeOnLoad (1ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (11ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
 Platform modules already initialized, skipping
-Validating Project structure ... 0.005399 seconds.
+Validating Project structure ... 0.006138 seconds.
 Shader import version has changed; will reimport all shaders...
-Upgrading shader files ...0.004024 seconds.
+Upgrading shader files ...0.005795 seconds.
 Application.AssetDatabase Initial Script Refresh Start
 RefreshInfo: InitialScriptRefreshV2(NoUpdateAssetOptions) scanfilter:  ... 1 filters
 RefreshProfiler: Total: 0.000ms
@@ -197,39 +133,18 @@ RefreshProfiler: Total: 0.000ms
 Launching external process: /Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/Tools/UnityShaderCompiler
 Launched and connected shader compiler UnityShaderCompiler after 0.02 seconds
 Initializing Unity extensions:
-Required property 'name' not set (Packages/com.unity.services.core/Editor/Core/Unity.Services.Core.Editor.asmdef)
-Required property 'name' not set (Packages/com.unity.ide.vscode/Editor/Unity.com.unity.vscode.Editor.asmdef)
-Required property 'name' not set (Packages/com.unity.textmeshpro/Tests/Runtime/Unity.TextMeshPro.Tests.asmdef)
-Required property 'name' not set (Packages/com.unity.textmeshpro/Scripts/Editor/Unity.TextMeshPro.Editor.asmdef)
-Required property 'name' not set (Packages/com.unity.ide.visualstudio/Editor/com.unity.ide.visualstudio.asmdef)
-Required property 'name' not set (Packages/com.unity.test-framework/UnityEngine.TestRunner/UnityEngine.TestRunner.asmdef)
-Required property 'name' not set (Packages/com.unity.ugui/Tests/Runtime/UnityEngine.UI.Tests.asmdef)
-Required property 'name' not set (Packages/com.unity.timeline/Editor/Unity.Timeline.Editor.asmdef)
-Required property 'name' not set (Packages/com.unity.timeline/Runtime/Unity.Timeline.asmdef)
-Required property 'name' not set (Packages/com.unity.textmeshpro/Scripts/Runtime/Unity.TextMeshPro.asmdef)
-Required property 'name' not set (Packages/com.unity.textmeshpro/Tests/Editor/Unity.TextMeshPro.Editor.Tests.asmdef)
-Required property 'name' not set (Packages/com.unity.collab-proxy/Editor/Collaborate/Unity.CollabProxy.Editor.asmdef)
-Required property 'name' not set (Packages/com.unity.collab-proxy/Tests/Editor/Collaborate/Unity.CollabProxy.EditorTests.asmdef)
-Required property 'name' not set (Packages/com.unity.test-framework/UnityEditor.TestRunner/UnityEditor.TestRunner.asmdef)
-Required property 'name' not set (Packages/com.unity.ugui/Tests/Editor/UnityEditor.UI.EditorTests.asmdef)
-Required property 'name' not set (Packages/com.unity.nuget.newtonsoft-json/Tests/Editor/Unity.Nuget.NewtonsoftJson.EditorTests.asmdef)
-Required property 'name' not set (Packages/com.unity.ugui/Editor/UnityEditor.UI.asmdef)
-Required property 'name' not set (Packages/com.unity.collab-proxy/Editor/PlasticSCM/Unity.PlasticSCM.Editor.asmdef)
-Required property 'name' not set (Packages/com.unity.collab-proxy/Tests/Editor/PlasticSCM/Unity.PlasticSCM.EditorTests.asmdef)
-Required property 'name' not set (Packages/com.unity.timeline/DocCodeExamples/DocCodeExamples.asmdef)
-Required property 'name' not set (Packages/com.unity.ide.rider/Rider/Editor/com.unity.ide.rider.asmdef)
-Required property 'name' not set (Packages/com.unity.ugui/Runtime/UnityEngine.UI.asmdef)
+2024-03-28 13:40:52.510 Unity[17571:529197] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7fe3e9c7d6a0 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+2024-03-28 13:40:52.514 Unity[17571:529197] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7fe3e9b66d10 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
 ========================================================================
 Worker process is ready to serve import requests
-Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(2) subTarget(0) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.39 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.37 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1511 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 147.1 MB.
-System memory in use after: 145.4 MB.
+Unloading 1514 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 75.9 MB.
+System memory in use after: 75.8 MB.
 
-Unloading 1513 unused Assets to reduce memory usage. Loaded Objects now: 527.
-Total: 3.976889 ms (FindLiveObjects: 0.257763 ms CreateObjectMapping: 0.102247 ms MarkObjects: 2.889294 ms  DeleteObjects: 0.726409 ms)
+Unloading 84 unused Assets to reduce memory usage. Loaded Objects now: 2018.
+Total: 3.582271 ms (FindLiveObjects: 0.157457 ms CreateObjectMapping: 0.049870 ms MarkObjects: 3.129618 ms  DeleteObjects: 0.243877 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -243,40 +158,184 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Scenes/Racer_Proto.unity
-  artifactKey: Guid(59c2867f17ec949418468797fb92041c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Racer_Proto.unity using Guid(59c2867f17ec949418468797fb92041c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.012438 seconds  code(4) message(Build asset version error: assets/scenes/racer_proto.unity in SourceAssetDB has modification time of '2024-03-27T22:01:51Z' while content on disk has modification time of '2024-03-28T16:26:20Z')
-  ERROR: Build asset version error: assets/scenes/racer_proto.unity in SourceAssetDB has modification time of '2024-03-27T22:01:51Z' while content on disk has modification time of '2024-03-28T16:26:20Z'
-  Import took 0.013370 seconds .
+  path: Assets/Materials/New Material.mat
+  artifactKey: Guid(4510e067a712d4f7c8463819944a1006) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/New Material.mat using Guid(4510e067a712d4f7c8463819944a1006) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c7955f35d4b3c3749066fc73878cbf8') in 0.393684 seconds 
+  Import took 0.403517 seconds .
 
-========================================================================
-Received Prepare
-Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(2) subTarget(0) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 6.43 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1498 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 145.8 MB.
-System memory in use after: 145.2 MB.
-
-Unloading 1495 unused Assets to reduce memory usage. Loaded Objects now: 527.
-Total: 10.789065 ms (FindLiveObjects: 0.453508 ms CreateObjectMapping: 0.058445 ms MarkObjects: 9.694853 ms  DeleteObjects: 0.580894 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 118.157796 seconds.
+  Time since last request: 0.000594 seconds.
+  path: Assets/Prefabs/Brayden-Prefab/Brayden_Obstacle_2.prefab
+  artifactKey: Guid(e58a12a1c55d74d92ad204de7d1ac7d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Brayden-Prefab/Brayden_Obstacle_2.prefab using Guid(e58a12a1c55d74d92ad204de7d1ac7d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '498613c83e1703e26de8d98c1f5f8995') in 0.217751 seconds 
+  Import took 0.226167 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000484 seconds.
+  path: Assets/Materials/fog-removebg-preview.png
+  artifactKey: Guid(fc9ea6b7554654289a56b4693f49bf96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/fog-removebg-preview.png using Guid(fc9ea6b7554654289a56b4693f49bf96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccae4cba08d5fba610dbe85093d5dc49') in 0.241738 seconds 
+  Import took 0.248901 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000374 seconds.
+  path: Assets/Prefabs/Brayden-Prefab/Brayden_Straight.prefab
+  artifactKey: Guid(28dcc1fc0d73e4f72baffd4345699bf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Brayden-Prefab/Brayden_Straight.prefab using Guid(28dcc1fc0d73e4f72baffd4345699bf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b01e386abcad47f3594d5869f30ad8b') in 0.025513 seconds 
+  Import took 0.029894 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000770 seconds.
+  path: Assets/Prefabs/Brayden-Prefab/Brayden_Obstacle_1.prefab
+  artifactKey: Guid(a31d942b6d9ef4bc893e565ff6676b96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Brayden-Prefab/Brayden_Obstacle_1.prefab using Guid(a31d942b6d9ef4bc893e565ff6676b96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff91ef6a32541d63d85dc6f0ab718b41') in 0.024574 seconds 
+  Import took 0.030608 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.011381 seconds.
   path: Assets/Scenes/Racer_Proto.unity
   artifactKey: Guid(59c2867f17ec949418468797fb92041c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Racer_Proto.unity using Guid(59c2867f17ec949418468797fb92041c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.002751 seconds  code(4) message(Build asset version error: assets/scenes/racer_proto.unity in SourceAssetDB has modification time of '2024-03-27T22:01:51Z' while content on disk has modification time of '2024-03-28T16:26:20Z')
-  ERROR: Build asset version error: assets/scenes/racer_proto.unity in SourceAssetDB has modification time of '2024-03-27T22:01:51Z' while content on disk has modification time of '2024-03-28T16:26:20Z'
-  Import took 0.003735 seconds .
+Start importing Assets/Scenes/Racer_Proto.unity using Guid(59c2867f17ec949418468797fb92041c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adf9fb4726ef8224393a6728f49343f0') in 0.002789 seconds 
+  Import took 0.007453 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.162120 seconds.
+  path: Assets/Cam_Prefabs/AssetExtras
+  artifactKey: Guid(f54a24abf2caa4b42932ddcc5ef2cdda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cam_Prefabs/AssetExtras using Guid(f54a24abf2caa4b42932ddcc5ef2cdda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e5afe3be4d3e9c5d0e93635ba4a885a') in 0.001987 seconds 
+  Import took 0.007237 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.173856 seconds.
+  path: Assets/Cam_Prefabs/AssetExtras/Classic Acoustic Guitar
+  artifactKey: Guid(3d287279f1b9c4151af1180724889d6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cam_Prefabs/AssetExtras/Classic Acoustic Guitar using Guid(3d287279f1b9c4151af1180724889d6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad5845770ef4d6e524ca90771a88fa1f') in 0.001860 seconds 
+  Import took 0.005941 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.735309 seconds.
+  path: Assets/Cam_Prefabs/AssetExtras/Classic Acoustic Guitar/Prefabs
+  artifactKey: Guid(0961d7a3670ac417f9e2d065b8d32192) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cam_Prefabs/AssetExtras/Classic Acoustic Guitar/Prefabs using Guid(0961d7a3670ac417f9e2d065b8d32192) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c55ee7e83df35ed6f2400c253b3241c8') in 0.001812 seconds 
+  Import took 0.006301 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.454016 seconds.
+  path: Assets/Cam_Prefabs/AssetExtras/Diapant95/Retro pink music recorder
+  artifactKey: Guid(50137f8288cb940d1b3778027f9286f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cam_Prefabs/AssetExtras/Diapant95/Retro pink music recorder using Guid(50137f8288cb940d1b3778027f9286f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '250f29226c848c7f3c176945cadd1ceb') in 0.001646 seconds 
+  Import took 0.006274 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.865506 seconds.
+  path: Assets/Cam_Prefabs/AssetExtras/Diapant95/Retro pink music recorder/Prefab
+  artifactKey: Guid(29c9d711bd08b4654ab8b11ac313a37d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cam_Prefabs/AssetExtras/Diapant95/Retro pink music recorder/Prefab using Guid(29c9d711bd08b4654ab8b11ac313a37d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8b2046a26234a5158bf6f274b9a6ee0') in 0.001806 seconds 
+  Import took 0.006405 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.657153 seconds.
+  path: Assets/Cam_Prefabs/AssetExtras/ElectricGuitars/ElectricGuitar_st
+  artifactKey: Guid(7053f0d0a29c24987925887db08580b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cam_Prefabs/AssetExtras/ElectricGuitars/ElectricGuitar_st using Guid(7053f0d0a29c24987925887db08580b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fc36301e112d8612c8b825536bb14df') in 0.001784 seconds 
+  Import took 0.006449 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.786271 seconds.
+  path: Assets/Cam_Prefabs/AssetExtras/JukeBox/prefab
+  artifactKey: Guid(d42a7036714c24ed6b62541d91fee408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cam_Prefabs/AssetExtras/JukeBox/prefab using Guid(d42a7036714c24ed6b62541d91fee408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbe8724ee0d61a124856b0cdb57832ee') in 0.001776 seconds 
+  Import took 0.005758 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 35.261645 seconds.
+  path: Assets/BEDRILL/Track_Environment_Free
+  artifactKey: Guid(cfdedfa34098a41ae9e4cac3b625f748) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BEDRILL/Track_Environment_Free using Guid(cfdedfa34098a41ae9e4cac3b625f748) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '374797c0dc32458db14612f0062874b4') in 0.001926 seconds 
+  Import took 0.006265 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 52.035334 seconds.
+  path: Assets/Prefabs/Brayden-Prefab
+  artifactKey: Guid(50dbc2f50651340caad8e0b6548b9823) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Brayden-Prefab using Guid(50dbc2f50651340caad8e0b6548b9823) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7eeea0844c71336602df38b995762431') in 0.001923 seconds 
+  Import took 0.007456 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.617702 seconds.
+  path: Assets/Prefabs/Brayden-Roads
+  artifactKey: Guid(50dbc2f50651340caad8e0b6548b9823) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Brayden-Roads using Guid(50dbc2f50651340caad8e0b6548b9823) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d5f0fe2072c033db18bc1c1d08e0d9c') in 0.001907 seconds 
+  Import took 0.006639 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.256094 seconds.
+  path: Assets/Prefabs/Tara_Roads
+  artifactKey: Guid(afccee289c6a7444a90fef4f2539c817) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tara_Roads using Guid(afccee289c6a7444a90fef4f2539c817) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '469f4e6d35d021b9da5952ae1463fd6b') in 0.001540 seconds 
+  Import took 0.006472 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.090526 seconds.
+  path: Assets/Prefabs/Cam-Roads
+  artifactKey: Guid(82873e20dafb246afb1eeaeb213248db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads using Guid(82873e20dafb246afb1eeaeb213248db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21b55a02a78234d1589e08e633b74760') in 0.002489 seconds 
+  Import took 0.005836 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.409884 seconds.
+  path: Assets/Prefabs/Road_Straight 1.prefab
+  artifactKey: Guid(43e2eae5c791c4261aa44f7272867fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Road_Straight 1.prefab using Guid(43e2eae5c791c4261aa44f7272867fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5f73b9110bca10d0b807e46310fad34') in 0.012539 seconds 
+  Import took 0.015928 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.006572 seconds.
+  path: Assets/Prefabs/Cam_Straight.prefab
+  artifactKey: Guid(43e2eae5c791c4261aa44f7272867fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam_Straight.prefab using Guid(43e2eae5c791c4261aa44f7272867fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6dde2047bde795854ec610209a60e53') in 0.013273 seconds 
+  Import took 0.017139 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.762379 seconds.
+  path: Assets/Prefabs/Alex-Straight
+  artifactKey: Guid(da741ab8aeb0245739fb40410fbe9efb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Alex-Straight using Guid(da741ab8aeb0245739fb40410fbe9efb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73e4c48bf766f2c9fb51e505624847a5') in 0.002820 seconds 
+  Import took 0.006802 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.734285 seconds.
+  path: Assets/Prefabs/Road_Straight 1.prefab
+  artifactKey: Guid(af6c626f5ee904ae6ae5add840287aea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Road_Straight 1.prefab using Guid(af6c626f5ee904ae6ae5add840287aea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7abd2529ab1583b02c4f1c45b405e7b7') in 0.012187 seconds 
+  Import took 0.015576 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.612952 seconds.
+  path: Assets/Prefabs/Alex-Straight/Alex_Straight.prefab
+  artifactKey: Guid(af6c626f5ee904ae6ae5add840287aea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Alex-Straight/Alex_Straight.prefab using Guid(af6c626f5ee904ae6ae5add840287aea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c86da4c9e5b24f13e5c7bfa754c8dd0') in 0.012326 seconds 
+  Import took 0.017270 seconds .
 
