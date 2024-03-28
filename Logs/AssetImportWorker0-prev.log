@@ -2,11 +2,11 @@ Unity Editor version:    2020.3.26f1 (7298b473bc1a)
 Branch:                  2020.3/staging
 Build type:              Release
 Batch mode:              YES
-macOS version:           Version 14.1.2 (Build 23B92)
-Darwin version:          23.1.0
+macOS version:           Version 14.0 (Build 23A344)
+Darwin version:          23.0.0
 Architecture:            x86_64
-Running under Rosetta:   NO
-Available memory:        8192 MB
+Running under Rosetta:   YES
+Available memory:        16384 MB
 Using pre-set license
 Pro License: NO
 
@@ -18,110 +18,107 @@ COMMAND LINE ARGUMENTS:
 -name
 AssetImportWorker0
 -projectPath
-/Users/braydenthompson/turbo-kart-dash-racer
+/Users/cameron/GitHub/CS4483/turbo-kart-dash-racer-game
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-53314
-Successfully changed project path to: /Users/braydenthompson/turbo-kart-dash-racer
-/Users/braydenthompson/turbo-kart-dash-racer
+54439
+Successfully changed project path to: /Users/cameron/GitHub/CS4483/turbo-kart-dash-racer-game
+/Users/cameron/GitHub/CS4483/turbo-kart-dash-racer-game
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 40.39 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 29.10 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.26f1 (7298b473bc1a)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path /Users/braydenthompson/turbo-kart-dash-racer/Assets
+[Subsystems] Discovering subsystems at path /Users/cameron/GitHub/CS4483/turbo-kart-dash-racer-game/Assets
 GfxDevice: creating device client; threaded=0
-2024-03-28 13:40:48.485 Unity[17571:529197] Color LCD preferred device: Intel(R) Iris(TM) Plus Graphics (low power)
-2024-03-28 13:40:48.485 Unity[17571:529197] Metal devices available: 1
-2024-03-28 13:40:48.485 Unity[17571:529197] 0: Intel(R) Iris(TM) Plus Graphics (low power)
-2024-03-28 13:40:48.486 Unity[17571:529197] Using device Intel(R) Iris(TM) Plus Graphics (low power)
-Initializing Metal device caps: Intel(R) Iris(TM) Plus Graphics
+2024-03-28 14:14:07.257 Unity[97064:3770879] (null) preferred device: Apple M2 (high power)
+2024-03-28 14:14:07.257 Unity[97064:3770879] Metal devices available: 1
+2024-03-28 14:14:07.257 Unity[97064:3770879] 0: Apple M2 (high power)
+2024-03-28 14:14:07.257 Unity[97064:3770879] Using device Apple M2 (high power)
+Initializing Metal device caps: Apple M2
 Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = '/Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56571
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56064
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: /Applications/Unity/Hub/Editor/2020.3.26f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/2020.3.26f1/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.000738 seconds.
+Registered in 0.002591 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 39.85 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 29.11 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.685 seconds
+- Completed reload, in  1.100 seconds
 Domain Reload Profiling:
-	ReloadAssembly (685ms)
-		BeginReloadAssembly (39ms)
+	ReloadAssembly (1100ms)
+		BeginReloadAssembly (75ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (566ms)
-			LoadAssemblies (39ms)
+			CreateAndSetChildDomain (3ms)
+		EndReloadAssembly (939ms)
+			LoadAssemblies (73ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (219ms)
+			SetupTypeCache (117ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (39ms)
-			SetupLoadedEditorAssemblies (216ms)
+			RebuildScriptCaches (28ms)
+			SetupLoadedEditorAssemblies (520ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (40ms)
-				BeforeProcessingInitializeOnLoad (31ms)
-				ProcessInitializeOnLoadAttributes (108ms)
-				ProcessInitializeOnLoadMethodAttributes (30ms)
+				InitializePlatformSupportModulesInManaged (12ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (29ms)
+				BeforeProcessingInitializeOnLoad (83ms)
+				ProcessInitializeOnLoadAttributes (295ms)
+				ProcessInitializeOnLoadMethodAttributes (100ms)
 				AfterProcessingInitializeOnLoad (0ms)
-				EditorAssembliesLoaded (0ms)
+				EditorAssembliesLoaded (1ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001849 seconds.
+Registered in 0.003202 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.36 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.228 seconds
+- Completed reload, in  1.922 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1228ms)
-		BeginReloadAssembly (163ms)
+	ReloadAssembly (1924ms)
+		BeginReloadAssembly (204ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
+			DisableScriptedObjects (29ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (35ms)
-		EndReloadAssembly (993ms)
-			LoadAssemblies (81ms)
+			CreateAndSetChildDomain (23ms)
+		EndReloadAssembly (1656ms)
+			LoadAssemblies (176ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (375ms)
+			SetupTypeCache (205ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (59ms)
-			SetupLoadedEditorAssemblies (342ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (1010ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
+				InitializePlatformSupportModulesInManaged (16ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (77ms)
-				ProcessInitializeOnLoadAttributes (247ms)
-				ProcessInitializeOnLoadMethodAttributes (10ms)
+				BeforeProcessingInitializeOnLoad (195ms)
+				ProcessInitializeOnLoadAttributes (766ms)
+				ProcessInitializeOnLoadMethodAttributes (30ms)
 				AfterProcessingInitializeOnLoad (1ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
+			AwakeInstancesAfterBackupRestoration (30ms)
 Platform modules already initialized, skipping
-Validating Project structure ... 0.006138 seconds.
+Validating Project structure ... 0.004275 seconds.
 Shader import version has changed; will reimport all shaders...
-Upgrading shader files ...0.005795 seconds.
+Upgrading shader files ...0.004902 seconds.
 Application.AssetDatabase Initial Script Refresh Start
 RefreshInfo: InitialScriptRefreshV2(NoUpdateAssetOptions) scanfilter:  ... 1 filters
 RefreshProfiler: Total: 0.000ms
@@ -131,20 +128,20 @@ Application.AssetDatabase.Refresh End
 RefreshInfo: StopAssetImportingV2(ForceSynchronousImport) scanfilter: 
 RefreshProfiler: Total: 0.000ms
 Launching external process: /Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/Tools/UnityShaderCompiler
-Launched and connected shader compiler UnityShaderCompiler after 0.02 seconds
+Launched and connected shader compiler UnityShaderCompiler after 0.03 seconds
 Initializing Unity extensions:
-2024-03-28 13:40:52.510 Unity[17571:529197] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7fe3e9c7d6a0 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
-2024-03-28 13:40:52.514 Unity[17571:529197] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7fe3e9b66d10 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+2024-03-28 14:14:11.185 Unity[97064:3770879] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7f794c00c3e0 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+2024-03-28 14:14:11.187 Unity[97064:3770879] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7f794c10c3c0 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
 ========================================================================
 Worker process is ready to serve import requests
-Refreshing native plugins compatible for Editor in 0.37 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.30 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1514 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 75.9 MB.
-System memory in use after: 75.8 MB.
+System memory in use before: 79.4 MB.
+System memory in use after: 79.2 MB.
 
 Unloading 84 unused Assets to reduce memory usage. Loaded Objects now: 2018.
-Total: 3.582271 ms (FindLiveObjects: 0.157457 ms CreateObjectMapping: 0.049870 ms MarkObjects: 3.129618 ms  DeleteObjects: 0.243877 ms)
+Total: 1.926625 ms (FindLiveObjects: 0.088000 ms CreateObjectMapping: 0.022875 ms MarkObjects: 1.678625 ms  DeleteObjects: 0.136416 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -158,184 +155,672 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Materials/New Material.mat
-  artifactKey: Guid(4510e067a712d4f7c8463819944a1006) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/New Material.mat using Guid(4510e067a712d4f7c8463819944a1006) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c7955f35d4b3c3749066fc73878cbf8') in 0.393684 seconds 
-  Import took 0.403517 seconds .
+  path: Assets/Prefabs/Cam-Roads/Classic Acoustic Guitar/Prefabs
+  artifactKey: Guid(c8c844b96fb728e4e84818e624056b38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/Classic Acoustic Guitar/Prefabs using Guid(c8c844b96fb728e4e84818e624056b38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76321bab2926f26c4673256a0c010c4c') in 0.005903 seconds 
+  Import took 0.007560 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000594 seconds.
-  path: Assets/Prefabs/Brayden-Prefab/Brayden_Obstacle_2.prefab
-  artifactKey: Guid(e58a12a1c55d74d92ad204de7d1ac7d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Brayden-Prefab/Brayden_Obstacle_2.prefab using Guid(e58a12a1c55d74d92ad204de7d1ac7d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '498613c83e1703e26de8d98c1f5f8995') in 0.217751 seconds 
-  Import took 0.226167 seconds .
+  Time since last request: 0.000185 seconds.
+  path: Assets/Prefabs/Cam-Roads/Classic Acoustic Guitar/Prefabs/Guitar_01.prefab
+  artifactKey: Guid(09545bfcbe5958d4691b14350e8c3e90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/Classic Acoustic Guitar/Prefabs/Guitar_01.prefab using Guid(09545bfcbe5958d4691b14350e8c3e90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bc00fdae8f62351852fcbb95522afc1') in 0.903237 seconds 
+  Import took 0.915663 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000484 seconds.
-  path: Assets/Materials/fog-removebg-preview.png
-  artifactKey: Guid(fc9ea6b7554654289a56b4693f49bf96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/fog-removebg-preview.png using Guid(fc9ea6b7554654289a56b4693f49bf96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccae4cba08d5fba610dbe85093d5dc49') in 0.241738 seconds 
-  Import took 0.248901 seconds .
+  Time since last request: 15.260730 seconds.
+  path: Assets/Prefabs/Cam-Roads/devotid/Microphone/Prefabs
+  artifactKey: Guid(510a69db708ccbe4f949b59cbb51a0c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/devotid/Microphone/Prefabs using Guid(510a69db708ccbe4f949b59cbb51a0c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7d5ecee01f0610284f6557dab555aeb') in 0.000795 seconds 
+  Import took 0.003112 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000374 seconds.
-  path: Assets/Prefabs/Brayden-Prefab/Brayden_Straight.prefab
-  artifactKey: Guid(28dcc1fc0d73e4f72baffd4345699bf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Brayden-Prefab/Brayden_Straight.prefab using Guid(28dcc1fc0d73e4f72baffd4345699bf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b01e386abcad47f3594d5869f30ad8b') in 0.025513 seconds 
-  Import took 0.029894 seconds .
+  Time since last request: 0.064060 seconds.
+  path: Assets/Prefabs/Cam-Roads/devotid/Microphone/Prefabs/Microphone Prefab.prefab
+  artifactKey: Guid(c1ba0cd34fc1b5a48974a67377a4c749) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/devotid/Microphone/Prefabs/Microphone Prefab.prefab using Guid(c1ba0cd34fc1b5a48974a67377a4c749) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9970ccdb6178449fe6641636b53040bc') in 0.046578 seconds 
+  Import took 0.049160 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000770 seconds.
-  path: Assets/Prefabs/Brayden-Prefab/Brayden_Obstacle_1.prefab
-  artifactKey: Guid(a31d942b6d9ef4bc893e565ff6676b96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Brayden-Prefab/Brayden_Obstacle_1.prefab using Guid(a31d942b6d9ef4bc893e565ff6676b96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff91ef6a32541d63d85dc6f0ab718b41') in 0.024574 seconds 
-  Import took 0.030608 seconds .
+  Time since last request: 4.269869 seconds.
+  path: Assets/Prefabs/Cam-Roads/Electric Guitar/Materials/Electric Guitar.mat
+  artifactKey: Guid(256fcc1aad659f24db89dc10e841846d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/Electric Guitar/Materials/Electric Guitar.mat using Guid(256fcc1aad659f24db89dc10e841846d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6086b6550258143709c0f374ce414c5a') in 0.105036 seconds 
+  Import took 0.109424 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 11.011381 seconds.
-  path: Assets/Scenes/Racer_Proto.unity
-  artifactKey: Guid(59c2867f17ec949418468797fb92041c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Racer_Proto.unity using Guid(59c2867f17ec949418468797fb92041c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adf9fb4726ef8224393a6728f49343f0') in 0.002789 seconds 
+  Time since last request: 0.657182 seconds.
+  path: Assets/Prefabs/Cam-Roads/Electric Guitar/Prefabs/Electric Guitar.prefab
+  artifactKey: Guid(4cba2a89bce5afb48b8de45b6ef1b303) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/Electric Guitar/Prefabs/Electric Guitar.prefab using Guid(4cba2a89bce5afb48b8de45b6ef1b303) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd75b2e3f39b70f18a8eb6023bbd2d3c8') in 0.014640 seconds 
+  Import took 0.018766 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.550998 seconds.
+  path: Assets/Prefabs/Cam-Roads/ElectricGuitars/ElectricGuitar_st/Prefab
+  artifactKey: Guid(0c35fb3c105a44e9aa45c33b3f5b7cf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/ElectricGuitars/ElectricGuitar_st/Prefab using Guid(0c35fb3c105a44e9aa45c33b3f5b7cf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c83ce1629727f5cc9392c0d84c1d0326') in 0.000929 seconds 
+  Import took 0.003480 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.088919 seconds.
+  path: Assets/Prefabs/Cam-Roads/ElectricGuitars/ElectricGuitar_st/Prefab/ElectricGuitar_st.prefab
+  artifactKey: Guid(a8d53702db3c4f24db9805f2662d6c37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/ElectricGuitars/ElectricGuitar_st/Prefab/ElectricGuitar_st.prefab using Guid(a8d53702db3c4f24db9805f2662d6c37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5b5d57d3a143a9bbba586a24cb43ea3') in 0.145020 seconds 
+  Import took 0.147398 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.819320 seconds.
+  path: Assets/Prefabs/Cam-Roads/ElectricGuitars/ElectricGuitar_st
+  artifactKey: Guid(faf5a5b603aa04974b95ed773c2a32ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/ElectricGuitars/ElectricGuitar_st using Guid(faf5a5b603aa04974b95ed773c2a32ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e9652e4abbf24db0d010bb2bd20db95') in 0.000997 seconds 
+  Import took 0.003713 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.978469 seconds.
+  path: Assets/Prefabs/Cam-Roads/LowPolyProps/Prefabs
+  artifactKey: Guid(3e22e517dc14dbe49b008f8a14e35b72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/LowPolyProps/Prefabs using Guid(3e22e517dc14dbe49b008f8a14e35b72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c14e0143697f137925fa55e73828daa') in 0.001268 seconds 
+  Import took 0.004837 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.102629 seconds.
+  path: Assets/Prefabs/Cam-Roads/LowPolyProps/Prefabs/props_122.prefab
+  artifactKey: Guid(b6de74f6f14acc847a74f9e710dd5dfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/LowPolyProps/Prefabs/props_122.prefab using Guid(b6de74f6f14acc847a74f9e710dd5dfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbdda8a1b77f6f22c57eeae16188a816') in 0.013360 seconds 
+  Import took 0.016155 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Assets/Prefabs/Cam-Roads/LowPolyProps/Prefabs/props_125.prefab
+  artifactKey: Guid(4696a038fa334864c8ebc4ba1b0658b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/LowPolyProps/Prefabs/props_125.prefab using Guid(4696a038fa334864c8ebc4ba1b0658b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2a2a4f15d20f4305c582bf3c19dabea') in 0.007874 seconds 
+  Import took 0.009872 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000273 seconds.
+  path: Assets/Prefabs/Cam-Roads/LowPolyProps/Prefabs/props_140.prefab
+  artifactKey: Guid(e2831f5f4452fb34e8478c82ed21152e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/LowPolyProps/Prefabs/props_140.prefab using Guid(e2831f5f4452fb34e8478c82ed21152e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed508d96330c2794d028f67783970dc3') in 0.008672 seconds 
+  Import took 0.010627 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000197 seconds.
+  path: Assets/Prefabs/Cam-Roads/LowPolyProps/Prefabs/props_134.prefab
+  artifactKey: Guid(1a613a6a266207040897b3c0e9941db8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/LowPolyProps/Prefabs/props_134.prefab using Guid(1a613a6a266207040897b3c0e9941db8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d35c95fe24a5695f59cd6b4d9fae943') in 0.007095 seconds 
+  Import took 0.008780 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000405 seconds.
+  path: Assets/Prefabs/Cam-Roads/LowPolyProps/Prefabs/props_132.prefab
+  artifactKey: Guid(a943d172130164d4eb33c78dd107c2a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/LowPolyProps/Prefabs/props_132.prefab using Guid(a943d172130164d4eb33c78dd107c2a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3b64f3819ddf0ad9bae7053e386da77') in 0.010424 seconds 
+  Import took 0.012178 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000190 seconds.
+  path: Assets/Prefabs/Cam-Roads/LowPolyProps/Prefabs/props_134a.prefab
+  artifactKey: Guid(a6349141dd736de47837b8d53c0bf0c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/LowPolyProps/Prefabs/props_134a.prefab using Guid(a6349141dd736de47837b8d53c0bf0c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb74f07f3fb29d61946d779ebcc41e39') in 0.008011 seconds 
+  Import took 0.009873 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000139 seconds.
+  path: Assets/Prefabs/Cam-Roads/LowPolyProps/Prefabs/props_136.prefab
+  artifactKey: Guid(482ef3b8ed62e0a43bc76b79f5875ef9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/LowPolyProps/Prefabs/props_136.prefab using Guid(482ef3b8ed62e0a43bc76b79f5875ef9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bab187c73cb81324568d7a9b8ebad5c3') in 0.006969 seconds 
+  Import took 0.008604 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/Prefabs/Cam-Roads/LowPolyProps/Prefabs/props_149.prefab
+  artifactKey: Guid(117dc82ed3ba37446bc953ea7188adab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/LowPolyProps/Prefabs/props_149.prefab using Guid(117dc82ed3ba37446bc953ea7188adab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b5ded6b64cd553af217522de01f53f7') in 0.006229 seconds 
+  Import took 0.007697 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000142 seconds.
+  path: Assets/Prefabs/Cam-Roads/LowPolyProps/Prefabs/props_131a.prefab
+  artifactKey: Guid(262559e1580ebd249a3ee2d678ea4802) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/LowPolyProps/Prefabs/props_131a.prefab using Guid(262559e1580ebd249a3ee2d678ea4802) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af36e2598ef128b36bdd3ce7223703e6') in 0.009796 seconds 
+  Import took 0.011565 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000177 seconds.
+  path: Assets/Prefabs/Cam-Roads/LowPolyProps/Prefabs/props_137.prefab
+  artifactKey: Guid(1be17063e9448f44cb1f624923951245) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/LowPolyProps/Prefabs/props_137.prefab using Guid(1be17063e9448f44cb1f624923951245) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68456e7c905e4e6c91ec4e10fa757976') in 0.006337 seconds 
+  Import took 0.008022 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000155 seconds.
+  path: Assets/Prefabs/Cam-Roads/LowPolyProps/Prefabs/props_128.prefab
+  artifactKey: Guid(7b0e5e6d008b73c48b854fb99669ad7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/LowPolyProps/Prefabs/props_128.prefab using Guid(7b0e5e6d008b73c48b854fb99669ad7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbb9d1376ccfc6a76ca4bc97d3c77226') in 0.007482 seconds 
+  Import took 0.009048 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000178 seconds.
+  path: Assets/Prefabs/Cam-Roads/LowPolyProps/Prefabs/props_131.prefab
+  artifactKey: Guid(8a685a57d81c02c458e148bbb3b9073e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/LowPolyProps/Prefabs/props_131.prefab using Guid(8a685a57d81c02c458e148bbb3b9073e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a013369e6e08339647b41f62e55ea88a') in 0.009313 seconds 
+  Import took 0.010967 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000178 seconds.
+  path: Assets/Prefabs/Cam-Roads/LowPolyProps/Prefabs/props_143.prefab
+  artifactKey: Guid(f2538c2f94c6a444cac505164e63532e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/LowPolyProps/Prefabs/props_143.prefab using Guid(f2538c2f94c6a444cac505164e63532e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5917af9c9ecbe7ea7bc6064d2fc27dd4') in 0.009215 seconds 
+  Import took 0.010946 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Assets/Prefabs/Cam-Roads/LowPolyProps/Prefabs/props_129.prefab
+  artifactKey: Guid(16d2a4951fc8d194c8031aadd16ec0fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/LowPolyProps/Prefabs/props_129.prefab using Guid(16d2a4951fc8d194c8031aadd16ec0fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9da962c88e66862b4994a01efc7cdba1') in 0.006669 seconds 
+  Import took 0.008211 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/Prefabs/Cam-Roads/LowPolyProps/Prefabs/props_141.prefab
+  artifactKey: Guid(0a53334a8899a4f4298259b8e7a2ff15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/LowPolyProps/Prefabs/props_141.prefab using Guid(0a53334a8899a4f4298259b8e7a2ff15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b9b8fd384a96500052d9a0b5d37cc27') in 0.008364 seconds 
+  Import took 0.010085 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/Prefabs/Cam-Roads/LowPolyProps/Prefabs/props_144.prefab
+  artifactKey: Guid(25bf4a4a294f093478e684f6a5cca66b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/LowPolyProps/Prefabs/props_144.prefab using Guid(25bf4a4a294f093478e684f6a5cca66b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf2bee7d871b239181259f4f1d05191c') in 0.007211 seconds 
+  Import took 0.008800 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000174 seconds.
+  path: Assets/Prefabs/Cam-Roads/LowPolyProps/Prefabs/props_124.prefab
+  artifactKey: Guid(efb2660ede2cfaf4585be93bee95c41c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/LowPolyProps/Prefabs/props_124.prefab using Guid(efb2660ede2cfaf4585be93bee95c41c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be715e7ed57f27bcfc9dbc80b87fe5f7') in 0.006672 seconds 
+  Import took 0.008212 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000189 seconds.
+  path: Assets/Prefabs/Cam-Roads/LowPolyProps/Prefabs/props_127.prefab
+  artifactKey: Guid(28ab1d578905d5e438faff691d0ea172) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/LowPolyProps/Prefabs/props_127.prefab using Guid(28ab1d578905d5e438faff691d0ea172) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21f2cd47ed8c08511ed1780cdfad3227') in 0.006961 seconds 
+  Import took 0.008525 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000155 seconds.
+  path: Assets/Prefabs/Cam-Roads/LowPolyProps/Prefabs/props_142.prefab
+  artifactKey: Guid(31ad6501d2aafe447a9ee4ad6eec39b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/LowPolyProps/Prefabs/props_142.prefab using Guid(31ad6501d2aafe447a9ee4ad6eec39b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5eb2ab8f26f7684d71d12e84cf66eac7') in 0.008441 seconds 
+  Import took 0.010138 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000160 seconds.
+  path: Assets/Prefabs/Cam-Roads/LowPolyProps/Prefabs/props_146.prefab
+  artifactKey: Guid(1c1cb2bfc61453845b4bad75f444edf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/LowPolyProps/Prefabs/props_146.prefab using Guid(1c1cb2bfc61453845b4bad75f444edf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4921b1d90929dc5965e7b3026bfbdf1a') in 0.006992 seconds 
+  Import took 0.008551 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000124 seconds.
+  path: Assets/Prefabs/Cam-Roads/LowPolyProps/Prefabs/props_133a.prefab
+  artifactKey: Guid(6826028367ed8ac4884cc53dd23f546c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/LowPolyProps/Prefabs/props_133a.prefab using Guid(6826028367ed8ac4884cc53dd23f546c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04a4c3183791f7c236f08a5a42ffdfce') in 0.006467 seconds 
+  Import took 0.007915 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/Prefabs/Cam-Roads/LowPolyProps/Prefabs/props_138.prefab
+  artifactKey: Guid(e176726dac278dd4abe1a02ae31702da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/LowPolyProps/Prefabs/props_138.prefab using Guid(e176726dac278dd4abe1a02ae31702da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e2ff58bb787bb7b94ccc271b25a2872') in 0.009474 seconds 
+  Import took 0.011147 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/Prefabs/Cam-Roads/LowPolyProps/Prefabs/props_130a.prefab
+  artifactKey: Guid(c9f9a602f0867f64388fa8218740c745) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/LowPolyProps/Prefabs/props_130a.prefab using Guid(c9f9a602f0867f64388fa8218740c745) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15fa8765f2f8adbc6dc6b4d4c556316b') in 0.007963 seconds 
+  Import took 0.009778 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000161 seconds.
+  path: Assets/Prefabs/Cam-Roads/LowPolyProps/Prefabs/props_147.prefab
+  artifactKey: Guid(32cbcc1be64e1ad41a9ddc50d2619d4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/LowPolyProps/Prefabs/props_147.prefab using Guid(32cbcc1be64e1ad41a9ddc50d2619d4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48dc1fe29d88ee5736f6bffb3660dd2c') in 0.006454 seconds 
+  Import took 0.007997 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000158 seconds.
+  path: Assets/Prefabs/Cam-Roads/LowPolyProps/Prefabs/props_127a.prefab
+  artifactKey: Guid(7ab14423c4f5c5d408982ec54cd6ea2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/LowPolyProps/Prefabs/props_127a.prefab using Guid(7ab14423c4f5c5d408982ec54cd6ea2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7b44ef566556c932c6e741476531d41') in 0.005857 seconds 
+  Import took 0.007438 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000179 seconds.
+  path: Assets/Prefabs/Cam-Roads/LowPolyProps/Prefabs/props_130b.prefab
+  artifactKey: Guid(8ac650c3c44ce8d49bedc91ca32a9703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/LowPolyProps/Prefabs/props_130b.prefab using Guid(8ac650c3c44ce8d49bedc91ca32a9703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebc16a356b9c2fda868a87a2d25d0437') in 0.005688 seconds 
+  Import took 0.007346 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000154 seconds.
+  path: Assets/Prefabs/Cam-Roads/LowPolyProps/Prefabs/props_133.prefab
+  artifactKey: Guid(27cd4e6544606234a8d44baa6bcfe75c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/LowPolyProps/Prefabs/props_133.prefab using Guid(27cd4e6544606234a8d44baa6bcfe75c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e889b6b76a72f53b70dda5b66f52a66') in 0.005873 seconds 
+  Import took 0.007371 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/Prefabs/Cam-Roads/LowPolyProps/Prefabs/props_130.prefab
+  artifactKey: Guid(3c1c0255e88e9e8438550b8806b45fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/LowPolyProps/Prefabs/props_130.prefab using Guid(3c1c0255e88e9e8438550b8806b45fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5b91efe3eddd92c0da0692f644adc21') in 0.006619 seconds 
+  Import took 0.008249 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000179 seconds.
+  path: Assets/Prefabs/Cam-Roads/LowPolyProps/Prefabs/props_148.prefab
+  artifactKey: Guid(c7b710ea7b440f24f9abdb8d7a84975b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/LowPolyProps/Prefabs/props_148.prefab using Guid(c7b710ea7b440f24f9abdb8d7a84975b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc9a2b5e1d368df40239b0f51de7df29') in 0.013429 seconds 
+  Import took 0.015478 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000159 seconds.
+  path: Assets/Prefabs/Cam-Roads/LowPolyProps/Prefabs/props_126.prefab
+  artifactKey: Guid(35a13726624faf24ab517d2e3371eb84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/LowPolyProps/Prefabs/props_126.prefab using Guid(35a13726624faf24ab517d2e3371eb84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be1e47741de7d81cc356cfb53933a4d4') in 0.006377 seconds 
+  Import took 0.007896 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000146 seconds.
+  path: Assets/Prefabs/Cam-Roads/LowPolyProps/Prefabs/props_145.prefab
+  artifactKey: Guid(7e5e68fc132091f4e9229584f548fb72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/LowPolyProps/Prefabs/props_145.prefab using Guid(7e5e68fc132091f4e9229584f548fb72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d72cf2d7465fd91d3edb2884e248936') in 0.009934 seconds 
+  Import took 0.011602 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000167 seconds.
+  path: Assets/Prefabs/Cam-Roads/LowPolyProps/Prefabs/props_128a.prefab
+  artifactKey: Guid(cd479c1c2c533d94cb2eaeadd7fef363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/LowPolyProps/Prefabs/props_128a.prefab using Guid(cd479c1c2c533d94cb2eaeadd7fef363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8329d04463c480e30d6bc0246e49fdd3') in 0.005319 seconds 
+  Import took 0.006644 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000150 seconds.
+  path: Assets/Prefabs/Cam-Roads/LowPolyProps/Prefabs/props_132a.prefab
+  artifactKey: Guid(15d58486c16243c4ebdcbe31741043a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/LowPolyProps/Prefabs/props_132a.prefab using Guid(15d58486c16243c4ebdcbe31741043a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70da7484cc026146523c0d574497551e') in 0.005990 seconds 
   Import took 0.007453 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 16.162120 seconds.
-  path: Assets/Cam_Prefabs/AssetExtras
-  artifactKey: Guid(f54a24abf2caa4b42932ddcc5ef2cdda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cam_Prefabs/AssetExtras using Guid(f54a24abf2caa4b42932ddcc5ef2cdda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e5afe3be4d3e9c5d0e93635ba4a885a') in 0.001987 seconds 
-  Import took 0.007237 seconds .
+  Time since last request: 0.000176 seconds.
+  path: Assets/Prefabs/Cam-Roads/LowPolyProps/Prefabs/props_139.prefab
+  artifactKey: Guid(20da682804671374b8d93e3516b1dc48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/LowPolyProps/Prefabs/props_139.prefab using Guid(20da682804671374b8d93e3516b1dc48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59f1ee2a4053e7db0785f9666791ee20') in 0.005590 seconds 
+  Import took 0.007149 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.173856 seconds.
-  path: Assets/Cam_Prefabs/AssetExtras/Classic Acoustic Guitar
-  artifactKey: Guid(3d287279f1b9c4151af1180724889d6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cam_Prefabs/AssetExtras/Classic Acoustic Guitar using Guid(3d287279f1b9c4151af1180724889d6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad5845770ef4d6e524ca90771a88fa1f') in 0.001860 seconds 
-  Import took 0.005941 seconds .
+  Time since last request: 0.000153 seconds.
+  path: Assets/Prefabs/Cam-Roads/LowPolyProps/Prefabs/props_126a.prefab
+  artifactKey: Guid(9ecfbb2ec651bc140bb54cb069cc61b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/LowPolyProps/Prefabs/props_126a.prefab using Guid(9ecfbb2ec651bc140bb54cb069cc61b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a14ee9493a07824d383eff82ce29f21e') in 0.006994 seconds 
+  Import took 0.008541 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 10.735309 seconds.
-  path: Assets/Cam_Prefabs/AssetExtras/Classic Acoustic Guitar/Prefabs
-  artifactKey: Guid(0961d7a3670ac417f9e2d065b8d32192) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cam_Prefabs/AssetExtras/Classic Acoustic Guitar/Prefabs using Guid(0961d7a3670ac417f9e2d065b8d32192) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c55ee7e83df35ed6f2400c253b3241c8') in 0.001812 seconds 
-  Import took 0.006301 seconds .
+  Time since last request: 0.000146 seconds.
+  path: Assets/Prefabs/Cam-Roads/LowPolyProps/Prefabs/props_150.prefab
+  artifactKey: Guid(08218cbec5082794ea670641812e8b38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/LowPolyProps/Prefabs/props_150.prefab using Guid(08218cbec5082794ea670641812e8b38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19f472bb72e112e848fb4e057b7297af') in 0.008133 seconds 
+  Import took 0.009784 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.454016 seconds.
-  path: Assets/Cam_Prefabs/AssetExtras/Diapant95/Retro pink music recorder
-  artifactKey: Guid(50137f8288cb940d1b3778027f9286f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cam_Prefabs/AssetExtras/Diapant95/Retro pink music recorder using Guid(50137f8288cb940d1b3778027f9286f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '250f29226c848c7f3c176945cadd1ceb') in 0.001646 seconds 
-  Import took 0.006274 seconds .
+  Time since last request: 0.000175 seconds.
+  path: Assets/Prefabs/Cam-Roads/LowPolyProps/Prefabs/props_123.prefab
+  artifactKey: Guid(0404648e5ebcb3c45a7fad24720c1870) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/LowPolyProps/Prefabs/props_123.prefab using Guid(0404648e5ebcb3c45a7fad24720c1870) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5cb4f3dad0509e6b4f6862620160216c') in 0.005783 seconds 
+  Import took 0.007326 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.865506 seconds.
-  path: Assets/Cam_Prefabs/AssetExtras/Diapant95/Retro pink music recorder/Prefab
-  artifactKey: Guid(29c9d711bd08b4654ab8b11ac313a37d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cam_Prefabs/AssetExtras/Diapant95/Retro pink music recorder/Prefab using Guid(29c9d711bd08b4654ab8b11ac313a37d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8b2046a26234a5158bf6f274b9a6ee0') in 0.001806 seconds 
-  Import took 0.006405 seconds .
+  Time since last request: 0.000211 seconds.
+  path: Assets/Prefabs/Cam-Roads/LowPolyProps/Prefabs/props_135.prefab
+  artifactKey: Guid(3250cd1f955000f4db14c38215e6129a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/LowPolyProps/Prefabs/props_135.prefab using Guid(3250cd1f955000f4db14c38215e6129a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1edd3e2d189510549d300492e5cc90e') in 0.007686 seconds 
+  Import took 0.009388 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.657153 seconds.
-  path: Assets/Cam_Prefabs/AssetExtras/ElectricGuitars/ElectricGuitar_st
-  artifactKey: Guid(7053f0d0a29c24987925887db08580b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cam_Prefabs/AssetExtras/ElectricGuitars/ElectricGuitar_st using Guid(7053f0d0a29c24987925887db08580b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fc36301e112d8612c8b825536bb14df') in 0.001784 seconds 
-  Import took 0.006449 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.786271 seconds.
-  path: Assets/Cam_Prefabs/AssetExtras/JukeBox/prefab
-  artifactKey: Guid(d42a7036714c24ed6b62541d91fee408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cam_Prefabs/AssetExtras/JukeBox/prefab using Guid(d42a7036714c24ed6b62541d91fee408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbe8724ee0d61a124856b0cdb57832ee') in 0.001776 seconds 
-  Import took 0.005758 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 35.261645 seconds.
-  path: Assets/BEDRILL/Track_Environment_Free
-  artifactKey: Guid(cfdedfa34098a41ae9e4cac3b625f748) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BEDRILL/Track_Environment_Free using Guid(cfdedfa34098a41ae9e4cac3b625f748) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '374797c0dc32458db14612f0062874b4') in 0.001926 seconds 
-  Import took 0.006265 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 52.035334 seconds.
-  path: Assets/Prefabs/Brayden-Prefab
-  artifactKey: Guid(50dbc2f50651340caad8e0b6548b9823) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Brayden-Prefab using Guid(50dbc2f50651340caad8e0b6548b9823) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7eeea0844c71336602df38b995762431') in 0.001923 seconds 
-  Import took 0.007456 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.617702 seconds.
-  path: Assets/Prefabs/Brayden-Roads
-  artifactKey: Guid(50dbc2f50651340caad8e0b6548b9823) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Brayden-Roads using Guid(50dbc2f50651340caad8e0b6548b9823) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d5f0fe2072c033db18bc1c1d08e0d9c') in 0.001907 seconds 
-  Import took 0.006639 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.256094 seconds.
-  path: Assets/Prefabs/Tara_Roads
-  artifactKey: Guid(afccee289c6a7444a90fef4f2539c817) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Tara_Roads using Guid(afccee289c6a7444a90fef4f2539c817) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '469f4e6d35d021b9da5952ae1463fd6b') in 0.001540 seconds 
-  Import took 0.006472 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.090526 seconds.
-  path: Assets/Prefabs/Cam-Roads
-  artifactKey: Guid(82873e20dafb246afb1eeaeb213248db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Cam-Roads using Guid(82873e20dafb246afb1eeaeb213248db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21b55a02a78234d1589e08e633b74760') in 0.002489 seconds 
-  Import took 0.005836 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.409884 seconds.
-  path: Assets/Prefabs/Road_Straight 1.prefab
+  Time since last request: 39.444268 seconds.
+  path: Assets/Prefabs/Cam-Roads/Cam_Straight.prefab
   artifactKey: Guid(43e2eae5c791c4261aa44f7272867fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road_Straight 1.prefab using Guid(43e2eae5c791c4261aa44f7272867fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5f73b9110bca10d0b807e46310fad34') in 0.012539 seconds 
-  Import took 0.015928 seconds .
+Start importing Assets/Prefabs/Cam-Roads/Cam_Straight.prefab using Guid(43e2eae5c791c4261aa44f7272867fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1d6fb8014ac01a90f532b643f12d1ab') in 0.040624 seconds 
+  Import took 0.043322 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 7.006572 seconds.
-  path: Assets/Prefabs/Cam_Straight.prefab
+  Time since last request: 33.706530 seconds.
+  path: Assets/Prefabs/Cam-Roads/Cam_Straight.prefab
   artifactKey: Guid(43e2eae5c791c4261aa44f7272867fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Cam_Straight.prefab using Guid(43e2eae5c791c4261aa44f7272867fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6dde2047bde795854ec610209a60e53') in 0.013273 seconds 
-  Import took 0.017139 seconds .
+Start importing Assets/Prefabs/Cam-Roads/Cam_Straight.prefab using Guid(43e2eae5c791c4261aa44f7272867fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fc23f1cfe2fbb5b2178588d0a4e1f00') in 0.011451 seconds 
+  Import took 0.014434 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 10.762379 seconds.
-  path: Assets/Prefabs/Alex-Straight
-  artifactKey: Guid(da741ab8aeb0245739fb40410fbe9efb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Alex-Straight using Guid(da741ab8aeb0245739fb40410fbe9efb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73e4c48bf766f2c9fb51e505624847a5') in 0.002820 seconds 
-  Import took 0.006802 seconds .
+  Time since last request: 2.832633 seconds.
+  path: Assets/Prefabs/Cam-Roads/Cam_Straight.prefab
+  artifactKey: Guid(43e2eae5c791c4261aa44f7272867fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/Cam_Straight.prefab using Guid(43e2eae5c791c4261aa44f7272867fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c4e24bd87a60d3721fe7535163bee87') in 0.010471 seconds 
+  Import took 0.012961 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.734285 seconds.
-  path: Assets/Prefabs/Road_Straight 1.prefab
-  artifactKey: Guid(af6c626f5ee904ae6ae5add840287aea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Road_Straight 1.prefab using Guid(af6c626f5ee904ae6ae5add840287aea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7abd2529ab1583b02c4f1c45b405e7b7') in 0.012187 seconds 
-  Import took 0.015576 seconds .
+  Time since last request: 4.720452 seconds.
+  path: Assets/Prefabs/Cam-Roads/Cam_Straight.prefab
+  artifactKey: Guid(43e2eae5c791c4261aa44f7272867fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/Cam_Straight.prefab using Guid(43e2eae5c791c4261aa44f7272867fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4ec89bbd46bdee5e495456d4d313894') in 0.009641 seconds 
+  Import took 0.011973 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 12.612952 seconds.
-  path: Assets/Prefabs/Alex-Straight/Alex_Straight.prefab
-  artifactKey: Guid(af6c626f5ee904ae6ae5add840287aea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Alex-Straight/Alex_Straight.prefab using Guid(af6c626f5ee904ae6ae5add840287aea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c86da4c9e5b24f13e5c7bfa754c8dd0') in 0.012326 seconds 
-  Import took 0.017270 seconds .
+  Time since last request: 2.427236 seconds.
+  path: Assets/Prefabs/Cam-Roads/Cam_Straight.prefab
+  artifactKey: Guid(43e2eae5c791c4261aa44f7272867fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/Cam_Straight.prefab using Guid(43e2eae5c791c4261aa44f7272867fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e493d7e8ed0b905b1a91ca2211f7a4a') in 0.010428 seconds 
+  Import took 0.012937 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.921419 seconds.
+  path: Assets/Prefabs/Cam-Roads/Cam_Straight.prefab
+  artifactKey: Guid(43e2eae5c791c4261aa44f7272867fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/Cam_Straight.prefab using Guid(43e2eae5c791c4261aa44f7272867fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec6165fe97e0a409d5abac79d1e21b7c') in 0.012094 seconds 
+  Import took 0.014756 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.837201 seconds.
+  path: Assets/Prefabs/Cam-Roads/Cam_Straight.prefab
+  artifactKey: Guid(43e2eae5c791c4261aa44f7272867fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/Cam_Straight.prefab using Guid(43e2eae5c791c4261aa44f7272867fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4acaab9414b08108e89e742cb3dfc4e') in 0.012444 seconds 
+  Import took 0.015100 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.249276 seconds.
+  path: Assets/Prefabs/Cam-Roads/Cam_Straight.prefab
+  artifactKey: Guid(43e2eae5c791c4261aa44f7272867fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/Cam_Straight.prefab using Guid(43e2eae5c791c4261aa44f7272867fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fb9de05cbe9ed7ad1708685bb1ec536') in 0.010725 seconds 
+  Import took 0.013139 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.363607 seconds.
+  path: Assets/Prefabs/Cam-Roads/Cam_Straight.prefab
+  artifactKey: Guid(43e2eae5c791c4261aa44f7272867fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/Cam_Straight.prefab using Guid(43e2eae5c791c4261aa44f7272867fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fa0450045b2861b4adae46226b011c3') in 0.010703 seconds 
+  Import took 0.013170 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.961325 seconds.
+  path: Assets/Prefabs/Cam-Roads/Cam_Straight.prefab
+  artifactKey: Guid(43e2eae5c791c4261aa44f7272867fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/Cam_Straight.prefab using Guid(43e2eae5c791c4261aa44f7272867fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f699572f3dfed284e66cc0c2cb5d710c') in 0.012620 seconds 
+  Import took 0.015469 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.523740 seconds.
+  path: Assets/Prefabs/Cam-Roads/Cam_Straight.prefab
+  artifactKey: Guid(43e2eae5c791c4261aa44f7272867fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/Cam_Straight.prefab using Guid(43e2eae5c791c4261aa44f7272867fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51a20f6805ccccec24ed4e07c7adfd4c') in 0.011767 seconds 
+  Import took 0.014351 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.630239 seconds.
+  path: Assets/Prefabs/Cam-Roads/Cam_Straight.prefab
+  artifactKey: Guid(43e2eae5c791c4261aa44f7272867fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/Cam_Straight.prefab using Guid(43e2eae5c791c4261aa44f7272867fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fbfe66950fee938618558923bb6a3aa') in 0.013055 seconds 
+  Import took 0.015971 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.039333 seconds.
+  path: Assets/Prefabs/Cam-Roads/Cam_Straight.prefab
+  artifactKey: Guid(43e2eae5c791c4261aa44f7272867fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/Cam_Straight.prefab using Guid(43e2eae5c791c4261aa44f7272867fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27e69ac692ead996e20ec669593ad9b3') in 0.012960 seconds 
+  Import took 0.015739 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.105483 seconds.
+  path: Assets/Prefabs/Cam-Roads/Cam_Straight.prefab
+  artifactKey: Guid(43e2eae5c791c4261aa44f7272867fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/Cam_Straight.prefab using Guid(43e2eae5c791c4261aa44f7272867fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29e641a647c5d8de70a2485e25477bc7') in 0.012645 seconds 
+  Import took 0.015346 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.455848 seconds.
+  path: Assets/Prefabs/Cam-Roads/Cam_Straight.prefab
+  artifactKey: Guid(43e2eae5c791c4261aa44f7272867fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/Cam_Straight.prefab using Guid(43e2eae5c791c4261aa44f7272867fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd51a943aee1beaa03adfe99244a3cfc1') in 0.012531 seconds 
+  Import took 0.015295 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 51.246291 seconds.
+  path: Assets/Prefabs/Cam-Roads/Cam_Straight.prefab
+  artifactKey: Guid(43e2eae5c791c4261aa44f7272867fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/Cam_Straight.prefab using Guid(43e2eae5c791c4261aa44f7272867fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65d5ff54613df1fb8745be962d25cd99') in 0.010664 seconds 
+  Import took 0.013201 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.717248 seconds.
+  path: Assets/Prefabs/Cam-Roads/Cam_Straight.prefab
+  artifactKey: Guid(43e2eae5c791c4261aa44f7272867fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/Cam_Straight.prefab using Guid(43e2eae5c791c4261aa44f7272867fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81a268ff1dfb3bcb2d4779240461019e') in 0.011756 seconds 
+  Import took 0.014672 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.635836 seconds.
+  path: Assets/Prefabs/Cam-Roads/Cam_Straight.prefab
+  artifactKey: Guid(43e2eae5c791c4261aa44f7272867fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/Cam_Straight.prefab using Guid(43e2eae5c791c4261aa44f7272867fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '450e6e0f4cb30f8e7919505398a83680') in 0.011993 seconds 
+  Import took 0.014828 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.490402 seconds.
+  path: Assets/Prefabs/Cam-Roads/Cam_Straight.prefab
+  artifactKey: Guid(43e2eae5c791c4261aa44f7272867fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/Cam_Straight.prefab using Guid(43e2eae5c791c4261aa44f7272867fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0851c765b3a1c326197e7507f71dd3a') in 0.011674 seconds 
+  Import took 0.014652 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.877961 seconds.
+  path: Assets/Prefabs/Cam-Roads/Cam_Straight.prefab
+  artifactKey: Guid(43e2eae5c791c4261aa44f7272867fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/Cam_Straight.prefab using Guid(43e2eae5c791c4261aa44f7272867fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc505d34ae57734da556fed67eb9959d') in 0.013083 seconds 
+  Import took 0.015951 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.050735 seconds.
+  path: Assets/Prefabs/Cam-Roads/Cam_Straight.prefab
+  artifactKey: Guid(43e2eae5c791c4261aa44f7272867fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/Cam_Straight.prefab using Guid(43e2eae5c791c4261aa44f7272867fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fc9cca4ddec58e3ee313950534469f1') in 0.012003 seconds 
+  Import took 0.014825 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.289535 seconds.
+  path: Assets/Prefabs/Cam-Roads/Cam_Straight.prefab
+  artifactKey: Guid(43e2eae5c791c4261aa44f7272867fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/Cam_Straight.prefab using Guid(43e2eae5c791c4261aa44f7272867fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64f26d334cbbb7316808b6e12950421e') in 0.011795 seconds 
+  Import took 0.014544 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.088676 seconds.
+  path: Assets/Prefabs/Cam-Roads/Cam_Straight.prefab
+  artifactKey: Guid(43e2eae5c791c4261aa44f7272867fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/Cam_Straight.prefab using Guid(43e2eae5c791c4261aa44f7272867fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b1bbae866403d150d5bc55621e62f30') in 0.011848 seconds 
+  Import took 0.014562 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.935729 seconds.
+  path: Assets/Prefabs/Cam-Roads/Cam_Straight.prefab
+  artifactKey: Guid(43e2eae5c791c4261aa44f7272867fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/Cam_Straight.prefab using Guid(43e2eae5c791c4261aa44f7272867fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '129f3f3eb62d72a3f77fbc7035268554') in 0.011502 seconds 
+  Import took 0.014091 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 56.027260 seconds.
+  path: Assets/Prefabs/Cam-Roads/Cam_Straight.prefab
+  artifactKey: Guid(43e2eae5c791c4261aa44f7272867fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/Cam_Straight.prefab using Guid(43e2eae5c791c4261aa44f7272867fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd60e216975c9b143b5dde59b93468fd4') in 0.011076 seconds 
+  Import took 0.013588 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.273180 seconds.
+  path: Assets/Prefabs/Cam-Roads/Cam_Straight.prefab
+  artifactKey: Guid(43e2eae5c791c4261aa44f7272867fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/Cam_Straight.prefab using Guid(43e2eae5c791c4261aa44f7272867fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dff25c4a5760d6d454a076578aedf75e') in 0.010693 seconds 
+  Import took 0.013152 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.222691 seconds.
+  path: Assets/Prefabs/Cam-Roads/Cam_Straight.prefab
+  artifactKey: Guid(43e2eae5c791c4261aa44f7272867fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/Cam_Straight.prefab using Guid(43e2eae5c791c4261aa44f7272867fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18b756405861846fb8c2b079295eaa17') in 0.011451 seconds 
+  Import took 0.014107 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.787821 seconds.
+  path: Assets/Prefabs/Cam-Roads/Cam_Straight.prefab
+  artifactKey: Guid(43e2eae5c791c4261aa44f7272867fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/Cam_Straight.prefab using Guid(43e2eae5c791c4261aa44f7272867fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28a59c0683d2545b02ff1e0192dc6b31') in 0.010763 seconds 
+  Import took 0.013197 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.511896 seconds.
+  path: Assets/Prefabs/Cam-Roads/Cam_Straight.prefab
+  artifactKey: Guid(43e2eae5c791c4261aa44f7272867fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/Cam_Straight.prefab using Guid(43e2eae5c791c4261aa44f7272867fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61bda5d9a3b2f9cdf7543b6ce47c41c7') in 0.011714 seconds 
+  Import took 0.014214 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.903938 seconds.
+  path: Assets/Prefabs/Cam-Roads/Cam_Straight.prefab
+  artifactKey: Guid(43e2eae5c791c4261aa44f7272867fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/Cam_Straight.prefab using Guid(43e2eae5c791c4261aa44f7272867fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2eb4942f6b6bca3e2846983e9ee5531f') in 0.011448 seconds 
+  Import took 0.013930 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.161766 seconds.
+  path: Assets/Prefabs/Cam-Roads/Cam_Straight.prefab
+  artifactKey: Guid(43e2eae5c791c4261aa44f7272867fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/Cam_Straight.prefab using Guid(43e2eae5c791c4261aa44f7272867fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2c987227f3ed033db9758396d900d71') in 0.011546 seconds 
+  Import took 0.014043 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.529300 seconds.
+  path: Assets/Prefabs/Cam-Roads/Cam_Straight.prefab
+  artifactKey: Guid(43e2eae5c791c4261aa44f7272867fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/Cam_Straight.prefab using Guid(43e2eae5c791c4261aa44f7272867fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e1c4961c12f75e61c603ad43443344b') in 0.011383 seconds 
+  Import took 0.013966 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.564393 seconds.
+  path: Assets/Prefabs/Cam-Roads/Cam_Straight.prefab
+  artifactKey: Guid(43e2eae5c791c4261aa44f7272867fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/Cam_Straight.prefab using Guid(43e2eae5c791c4261aa44f7272867fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07dda3153174940a5267ffd6e93a2888') in 0.012073 seconds 
+  Import took 0.014526 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 44.360455 seconds.
+  path: Assets/Prefabs/Cam-Roads/Black.mat
+  artifactKey: Guid(432ef5c00b8e54240ad19046fb89a131) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/Black.mat using Guid(432ef5c00b8e54240ad19046fb89a131) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60ed2c08457aa14260f5f068a3fcaa8d') in 0.011092 seconds 
+  Import took 0.013250 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.485202 seconds.
+  path: Assets/Prefabs/Cam-Roads/Cam_Straight.prefab
+  artifactKey: Guid(43e2eae5c791c4261aa44f7272867fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/Cam_Straight.prefab using Guid(43e2eae5c791c4261aa44f7272867fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f712895ab239b6f09bed3551f9957458') in 0.011612 seconds 
+  Import took 0.014248 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.211848 seconds.
+  path: Assets/Prefabs/Cam-Roads/Cam_Straight.prefab
+  artifactKey: Guid(43e2eae5c791c4261aa44f7272867fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cam-Roads/Cam_Straight.prefab using Guid(43e2eae5c791c4261aa44f7272867fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75d92c0774f713fad58686b4961c5f2a') in 0.011046 seconds 
+  Import took 0.013389 seconds .
 
