@@ -144,7 +144,7 @@ public class ManageRoadSpeed : MonoBehaviour
         float[] accelerationMapping = { -0.7f, -0.5f, -0.4f, -0.3f, -0.1f };
         float[] duckTimeMapping = { 0.5f, 1f, 1.5f, 2f, 3f };
         float[] jumpPowerMapping = { 4f, 5f, 6f, 7.5f, 8.5f };
-        float[] lateralSpeedMapping = { 4.5f, 5f, 6f, 7f, 7.5f };
+        float[] lateralSpeedMapping = { 4f, 5.5f, 7f, 8.5f, 10f };
 
         //update game settings based on slider values
         acceleration = accelerationMapping[controlSlider - 1]; //subtract 1 because array indexes start at 0
