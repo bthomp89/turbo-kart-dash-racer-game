@@ -1510,3 +1510,142 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 804.166104 seconds.
+  path: Assets/Scripts/Player_Movement.cs
+  artifactKey: Guid(bcfa74ed40ab844c2a626f245a6899ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Player_Movement.cs using Guid(bcfa74ed40ab844c2a626f245a6899ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfabb45457102623f2ed2fa56fe2fce9') in 0.500171 seconds 
+  Import took 0.544064 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.217121 seconds.
+  path: Assets/Scripts/ManageRoadSpeed.cs
+  artifactKey: Guid(e025a72114c0a4240bb97cea9bcca963) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ManageRoadSpeed.cs using Guid(e025a72114c0a4240bb97cea9bcca963) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c6e7440177d7c0a32e652ea5953c9c6') in 0.007582 seconds 
+  Import took 0.013086 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.798786 seconds.
+  path: Assets/Scripts/MenuManager.cs
+  artifactKey: Guid(09bbbc5faee6049749fd6935f041c32f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MenuManager.cs using Guid(09bbbc5faee6049749fd6935f041c32f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09d7ded437ad38c9d805ca49b0398a51') in 0.010537 seconds 
+  Import took 0.016179 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.879795 seconds.
+  path: Assets/Scripts/Spawn_Road.cs
+  artifactKey: Guid(d49142026b874404ca3353670496422c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Spawn_Road.cs using Guid(d49142026b874404ca3353670496422c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4260ef16bbbfc79e8b6a8e284db80ce') in 0.008893 seconds 
+  Import took 0.015007 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 208.387608 seconds.
+  path: Assets/Scenes/Tara_Level.unity
+  artifactKey: Guid(dde5b3db395b6446ba56f544af78e239) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Tara_Level.unity using Guid(dde5b3db395b6446ba56f544af78e239) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9f19d8d6e45cb2af4f3e47963dd409d') in 0.102170 seconds 
+  Import took 0.105885 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 39.074933 seconds.
+  path: Assets/Racer/Prefabs/RacerAndKart 2.prefab
+  artifactKey: Guid(771cc96cdfa23ab42a02aff4c68df57c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Racer/Prefabs/RacerAndKart 2.prefab using Guid(771cc96cdfa23ab42a02aff4c68df57c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '022caa9f306b2b47b85cafdff7f50004') in 0.536793 seconds 
+  Import took 0.545121 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 37.300695 seconds.
+  path: Assets/Racer/Prefabs/Kart.prefab
+  artifactKey: Guid(771cc96cdfa23ab42a02aff4c68df57c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Racer/Prefabs/Kart.prefab using Guid(771cc96cdfa23ab42a02aff4c68df57c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '793f4db33a76208179167bd62b7e29f0') in 0.199643 seconds 
+  Import took 0.204957 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 37.254893 seconds.
+  path: Assets/Go-Kart Assests/Track_Environment_Free/Textures/Track_Texture.png
+  artifactKey: Guid(df3a2f2806cd8074cb8235cf73db76f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Go-Kart Assests/Track_Environment_Free/Textures/Track_Texture.png using Guid(df3a2f2806cd8074cb8235cf73db76f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a01c65b711f690d14c19ab23fa2dd5cb') in 1.133002 seconds 
+  Import took 1.175903 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004792 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2024-03-30 13:45:40.094 Unity[21980:658951] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7fc33f089e80 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Mono: successfully reloaded assembly
+- Completed reload, in  2.076 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2078ms)
+		BeginReloadAssembly (252ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (11ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (163ms)
+		EndReloadAssembly (1717ms)
+			LoadAssemblies (112ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (490ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (66ms)
+			SetupLoadedEditorAssemblies (842ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (154ms)
+				ProcessInitializeOnLoadAttributes (650ms)
+				ProcessInitializeOnLoadMethodAttributes (25ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (14ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.55 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1507 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 478.1 MB.
+System memory in use after: 478.2 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2096.
+Total: 4.128074 ms (FindLiveObjects: 0.206877 ms CreateObjectMapping: 0.070064 ms MarkObjects: 3.822943 ms  DeleteObjects: 0.026871 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 95.823092 seconds.
+  path: Assets/Scenes/Cam_Level.unity
+  artifactKey: Guid(e43970f8c25114b2585baec17715a675) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Cam_Level.unity using Guid(e43970f8c25114b2585baec17715a675) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '001056d9eb2057afe9bc75aafda2d0f2') in 0.027654 seconds 
+  Import took 0.032417 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.107394 seconds.
+  path: Assets/Scenes/Racer_Proto.unity
+  artifactKey: Guid(59c2867f17ec949418468797fb92041c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Racer_Proto.unity using Guid(59c2867f17ec949418468797fb92041c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a096ad48852344f1e53adf2e38c390e2') in 0.001949 seconds 
+  Import took 0.009597 seconds .
+
