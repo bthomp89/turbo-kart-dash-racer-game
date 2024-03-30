@@ -29,12 +29,14 @@ public class ManageRoadSpeed : MonoBehaviour
 
     private int controlSlider, duckSlider, jumpSlider, lsSlider;
 
+    [SerializeField] private GameObject[] characterPrefabs; // Add this to assign your character prefabs in the Inspector
+
+
     private void Awake()
     {
         if (Instance == null)
         {
             Instance = this;
-            motor = GameObject.FindGameObjectWithTag("Player").GetComponent<Player_Movement>();
             startText = GameObject.FindGameObjectWithTag("StartText");
         }
         else
@@ -45,15 +47,8 @@ public class ManageRoadSpeed : MonoBehaviour
 
     void Start()
     {
-        //load PlayerPrefs at the start of the game
-        highScore = PlayerPrefs.GetFloat("HighScore", 0);
-        skillPoints = PlayerPrefs.GetInt("SkillPoints", 0);
-        controlSlider = PlayerPrefs.GetInt("ControlSlider", 1);
-        duckSlider = PlayerPrefs.GetInt("DuckSlider", 1);
-        jumpSlider = PlayerPrefs.GetInt("JumpSlider", 1);
-        lsSlider = PlayerPrefs.GetInt("LsSlider", 1);
-
-        updateAttributes(controlSlider, duckSlider, jumpSlider, lsSlider);
+        LoadPlayerPreferences();
+        SpawnSelectedCharacter();
         UpdateScores();
     }
 
@@ -88,6 +83,9 @@ public class ManageRoadSpeed : MonoBehaviour
             isMenuOpen = false;
             startText.SetActive(true);
             motor.LoadAndUpdateAttributes();
+
+            SpawnSelectedCharacter();
+
 
         }
         else if (isGameStarted)
@@ -127,6 +125,40 @@ public class ManageRoadSpeed : MonoBehaviour
         highScoreText.text = "High Score: " + highScore.ToString("F2");
         speedText.text = "Speed: " + (-10 * CurrentSpeed).ToString("F2") + "mph";
         skillPointsText.text = "Skill Points: " + skillPoints.ToString(); //change onscreen text
+
+    }
+
+    private void LoadPlayerPreferences()
+    {
+        //load PlayerPrefs at the start of the game
+        highScore = PlayerPrefs.GetFloat("HighScore", 0);
+        skillPoints = PlayerPrefs.GetInt("SkillPoints", 0);
+        controlSlider = PlayerPrefs.GetInt("ControlSlider", 1);
+        duckSlider = PlayerPrefs.GetInt("DuckSlider", 1);
+        jumpSlider = PlayerPrefs.GetInt("JumpSlider", 1);
+        lsSlider = PlayerPrefs.GetInt("LsSlider", 1);
+
+        updateAttributes(controlSlider, duckSlider, jumpSlider, lsSlider);
+    }
+
+    private void SpawnSelectedCharacter()
+    {
+        // Destroy the old character if there is one
+        GameObject oldPlayer = GameObject.FindGameObjectWithTag("Player");
+        if (oldPlayer != null) Destroy(oldPlayer);
+
+        // Get the selected character index from PlayerPrefs
+        int selectedCharacterIndex = PlayerPrefs.GetInt("SelectedCharacterIndex", 0); // Default to 0
+
+        // Define the start position
+        Vector3 startPosition = new Vector3(0f, 0f, -10f); // The desired spawn position
+
+        // Instantiate the selected character prefab
+        GameObject playerPrefab = characterPrefabs[selectedCharacterIndex];
+        GameObject playerInstance = Instantiate(playerPrefab, startPosition, Quaternion.identity);
+
+        // Set the 'motor' reference to the new instance
+        motor = playerInstance.GetComponent<Player_Movement>();
 
     }
 

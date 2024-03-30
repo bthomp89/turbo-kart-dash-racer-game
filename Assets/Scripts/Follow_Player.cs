@@ -11,6 +11,12 @@ public class Follow_Player : MonoBehaviour
   
     void Start()
     {
+
+        if (player == null)
+        {
+            // Try to find the player by tag
+            FindPlayer();
+        }
         transform.position = player.position + offset;
     }
 
@@ -22,6 +28,18 @@ public class Follow_Player : MonoBehaviour
             Vector3 desiredPosition = player.position + offset;
             desiredPosition.x = 0;
             transform.position = Vector3.Lerp(transform.position, desiredPosition, 0.1f);
+        } else {
+            FindPlayer();
+        }
+
+    }
+
+    void FindPlayer()
+    {
+        GameObject playerGameObject = GameObject.FindGameObjectWithTag("Player");
+        if (playerGameObject != null)
+        {
+            player = playerGameObject.transform;
         }
     }
 }

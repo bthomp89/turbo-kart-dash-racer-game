@@ -13,6 +13,14 @@ public class MenuManager : MonoBehaviour
     public Button level2Button;
     public Button level3Button;
     public Button level4Button;
+    [SerializeField] private GameObject[] characterPrefabs;
+    [SerializeField] private Image characterPreviewDisplay;
+    [SerializeField] private Sprite[] characterPreviewSprites; // Assign the sprites in the Inspector
+    [SerializeField] private Button leftArrowButton;
+    [SerializeField] private Button rightArrowButton;
+    [SerializeField] private Button selectButton;
+
+    private int currentCharacterIndex = 0;
 
 
 
@@ -23,6 +31,52 @@ public class MenuManager : MonoBehaviour
         level2Button.onClick.AddListener(LoadLevel2Scene);
         level3Button.onClick.AddListener(LoadLevel3Scene);
         level4Button.onClick.AddListener(LoadLevel4Scene);
+
+        leftArrowButton.onClick.AddListener(OnLeftArrowPressed);
+        rightArrowButton.onClick.AddListener(OnRightArrowPressed);
+        selectButton.onClick.AddListener(SelectCharacter);
+
+        LoadImageofCurrentCharacter();
+        //DisplayCurrentCharacter();
+
+    }
+
+
+    private void LoadImageofCurrentCharacter()
+    {
+       int index = PlayerPrefs.GetInt("SelectedCharacterIndex", 0);//default to 0
+       characterPreviewDisplay.sprite = characterPreviewSprites[index];
+
+    }
+
+    private void DisplayCurrentCharacter()
+    {
+        if (characterPreviewSprites.Length > 0)
+        {
+            characterPreviewDisplay.sprite = characterPreviewSprites[currentCharacterIndex];
+        }
+    }
+
+    // Called when the select button is pressed
+    public void SelectCharacter()
+    {
+        // Save the selected character index for later use in game
+        PlayerPrefs.SetInt("SelectedCharacterIndex", currentCharacterIndex);
+        // Load the game scene or close the menu as needed
+        Debug.Log("Character Selected: " + characterPrefabs[currentCharacterIndex].name);
+    }
+    // Called when the left arrow button is pressed
+    public void OnLeftArrowPressed()
+    {
+        currentCharacterIndex = (currentCharacterIndex > 0) ? currentCharacterIndex - 1 : characterPreviewSprites.Length - 1;
+        DisplayCurrentCharacter();
+    }
+
+    // Called when the right arrow button is pressed
+    public void OnRightArrowPressed()
+    {
+        currentCharacterIndex = (currentCharacterIndex < characterPreviewSprites.Length - 1) ? currentCharacterIndex + 1 : 0;
+        DisplayCurrentCharacter();
     }
 
     //call this method when closing the menu
