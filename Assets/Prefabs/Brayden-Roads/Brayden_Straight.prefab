@@ -488,8 +488,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   roadSection:
   - {fileID: 1188649866027271049}
-  - {fileID: 1188649866027271049, guid: a31d942b6d9ef4bc893e565ff6676b96, type: 3}
+  - {fileID: 1188649866027271049, guid: e56f7e64edc414bcda332a0f55d2160e, type: 3}
+  - {fileID: 1188649866027271049, guid: c914f303cf63c434d9251dc356ded70d, type: 3}
+  - {fileID: 1188649866027271049, guid: 12a360f06300741a3a6cae25bf76710c, type: 3}
+  - {fileID: 1188649866027271049, guid: 14062afc847834d55a0bf57236473387, type: 3}
+  - {fileID: 1188649866027271049, guid: 7850396a904024be4a200e52d559f3e6, type: 3}
+  - {fileID: 1188649866027271049, guid: f4992bd911a2540d8a7ec97bfab53459, type: 3}
   - {fileID: 1188649866027271049, guid: e58a12a1c55d74d92ad204de7d1ac7d6, type: 3}
+  - {fileID: 1188649866027271049, guid: a31d942b6d9ef4bc893e565ff6676b96, type: 3}
 --- !u!1001 &3970728696676989246
 PrefabInstance:
   m_ObjectHideFlags: 0
