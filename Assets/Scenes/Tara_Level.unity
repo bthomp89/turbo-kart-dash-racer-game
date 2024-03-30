@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.06963628, g: 0.13936365, b: 0.1857155, a: 1}
+  m_IndirectSpecularColor: {r: 0.06958419, g: 0.13934124, b: 0.18570492, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -721,61 +721,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &780879948 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100000, guid: 771cc96cdfa23ab42a02aff4c68df57c, type: 3}
-  m_PrefabInstance: {fileID: 1010851964}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &780879949 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 771cc96cdfa23ab42a02aff4c68df57c, type: 3}
   m_PrefabInstance: {fileID: 1010851964}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &780879950
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 780879948}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bcfa74ed40ab844c2a626f245a6899ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lateralSpeed: 6
-  jumpPower: 7
-  duckTime: 0.5
---- !u!54 &780879951
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 780879948}
-  serializedVersion: 2
-  m_Mass: 1.2
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 112
-  m_CollisionDetection: 1
---- !u!136 &780879952
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 780879948}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.38251287
-  m_Height: 1.6003052
-  m_Direction: 1
-  m_Center: {x: -0.009478569, y: 0.72702044, z: 0}
 --- !u!1 &832595485
 GameObject:
   m_ObjectHideFlags: 0
@@ -1047,25 +997,9 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 771cc96cdfa23ab42a02aff4c68df57c, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 771cc96cdfa23ab42a02aff4c68df57c, type: 3}
       propertyPath: m_RootOrder
       value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 771cc96cdfa23ab42a02aff4c68df57c, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 771cc96cdfa23ab42a02aff4c68df57c, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 771cc96cdfa23ab42a02aff4c68df57c, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 771cc96cdfa23ab42a02aff4c68df57c, type: 3}
       propertyPath: m_LocalPosition.x

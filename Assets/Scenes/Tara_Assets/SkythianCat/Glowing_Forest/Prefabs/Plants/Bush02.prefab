@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4000011445301418}
   - component: {fileID: 33000011447380432}
   - component: {fileID: 23000012781914652}
-  - component: {fileID: 1682497801041175992}
+  - component: {fileID: 775991184748929826}
   m_Layer: 0
   m_Name: Bush02
   m_TagString: Obstacle
@@ -82,7 +82,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &1682497801041175992
+--- !u!136 &775991184748929826
 CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -92,7 +92,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 1.5225363
-  m_Height: 1.3324716
-  m_Direction: 1
-  m_Center: {x: 0.12063748, y: 0.3397416, z: 0}
+  m_Radius: 0.7219158
+  m_Height: 2.4299736
+  m_Direction: 0
+  m_Center: {x: 0.037613392, y: 0.25205737, z: -0.00067698956}
