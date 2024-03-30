@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/Alex_Level.unity
+=======
+- path: Assets/Scenes/Tara_Level.unity
+>>>>>>> main
   isLoaded: 1
   isActive: 1
   isSubScene: 0

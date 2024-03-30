@@ -10,7 +10,7 @@ public class ManageRoadSpeed : MonoBehaviour
     public float CurrentSpeed { get; private set; }
     [SerializeField] private float initialSpeed = -2.5f;
     [SerializeField] private float acceleration = -0.7f; //Driver Upgrade --> slows speed down giving driver more control
-    [SerializeField] private float maxGameSpeed = -20f; 
+    [SerializeField] private float maxGameSpeed = -20f;
 
     private bool isGameStarted = false;
     private float gameStartTime;
@@ -68,10 +68,10 @@ public class ManageRoadSpeed : MonoBehaviour
             motor.startDriving();
             CurrentSpeed = initialSpeed;
             gameStartTime = Time.time; //record game start time
-            
+
 
         } //logic for open/closing menu
-        else if (Input.GetKeyDown(KeyCode.M) &&!isGameStarted && !isMenuOpen)
+        else if (Input.GetKeyDown(KeyCode.M) && !isGameStarted && !isMenuOpen)
         {
 
             StartCoroutine(LoadMenuScene()); //opening menu logic
@@ -93,14 +93,15 @@ public class ManageRoadSpeed : MonoBehaviour
         else if (isGameStarted)
         {
             //gradually increase speed over game life
-            if(CurrentSpeed > maxGameSpeed)
+            if (CurrentSpeed > maxGameSpeed)
             {
                 CurrentSpeed += acceleration * Time.deltaTime;
-            } else
+            }
+            else
             {
                 CurrentSpeed = maxGameSpeed;
             }
-           
+
 
             //score calculator logic
             score = (Time.time - gameStartTime) * 10;
@@ -109,7 +110,7 @@ public class ManageRoadSpeed : MonoBehaviour
             if (score > highScore)
             {
                 highScore = score;
-                
+
                 //save highscore to PlayerPrefs
                 PlayerPrefs.SetFloat("HighScore", highScore);
                 //check if highscore is eligble for SP's
@@ -137,13 +138,13 @@ public class ManageRoadSpeed : MonoBehaviour
             startText.SetActive(true);
     }
 
-    public void updateAttributes(int controlSlider, int duckSlider, int jumpSlider, int lsSlider) 
+    public void updateAttributes(int controlSlider, int duckSlider, int jumpSlider, int lsSlider)
     {
 
         float[] accelerationMapping = { -0.7f, -0.5f, -0.4f, -0.3f, -0.1f };
         float[] duckTimeMapping = { 0.5f, 1f, 1.5f, 2f, 3f };
-        float[] jumpPowerMapping = { 4f, 4.5f, 5.25f, 6f, 6.5f };
-        float[] lateralSpeedMapping = { 3f, 3.5f, 4f, 4.5f, 5.5f };
+        float[] jumpPowerMapping = { 4f, 5f, 6f, 7.5f, 8.5f };
+        float[] lateralSpeedMapping = { 4.5f, 5f, 6f, 7f, 7.5f };
 
         //update game settings based on slider values
         acceleration = accelerationMapping[controlSlider - 1]; //subtract 1 because array indexes start at 0
@@ -160,7 +161,7 @@ public class ManageRoadSpeed : MonoBehaviour
         PlayerPrefs.SetFloat("Duck", duckTime);
         PlayerPrefs.SetFloat("Jump", jumpPower);
         PlayerPrefs.SetFloat("Ls", lateralSpeed);
-        PlayerPrefs.Save(); 
+        PlayerPrefs.Save();
     }
 
     IEnumerator LoadMenuScene()
@@ -185,7 +186,8 @@ public class ManageRoadSpeed : MonoBehaviour
         startText.SetActive(false);
     }
 
-    void isHighScoreEligble(float highscore){
+    void isHighScoreEligble(float highscore)
+    {
 
         //calculate the number of times 150 fits into the current high score
         int targetSkillPointsAwarded = (int)(highScore / 150);
@@ -197,7 +199,7 @@ public class ManageRoadSpeed : MonoBehaviour
         {
 
             skillPoints += newSkillPoints;
-           
+
             //save the updated values back to PlayerPrefs
             PlayerPrefs.SetInt("SkillPoints", skillPoints);
             PlayerPrefs.Save();

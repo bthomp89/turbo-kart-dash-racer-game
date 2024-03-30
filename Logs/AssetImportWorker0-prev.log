@@ -2,6 +2,7 @@ Unity Editor version:    2020.3.26f1 (7298b473bc1a)
 Branch:                  2020.3/staging
 Build type:              Release
 Batch mode:              YES
+<<<<<<< HEAD
 macOS version:           Version 13.6.3 (Build 22G436)
 Darwin version:          22.6.0
 Architecture:            x86_64
@@ -173,3 +174,13 @@ Start importing Assets/Prefabs/Alex-Roads/Alex_Prefabs using Guid(0b385406cb7614
   Import took 0.006707 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+=======
+macOS version:           Version 12.3.1 (Build 21E258)
+Darwin version:          21.4.0
+Architecture:            x86_64
+Running under Rosetta:   NO
+Available memory:        16384 MB
+Assertion failed on expression: 'IsFileCreated(kWorkerLicensePath)'
+Assertion failed on expression: 'ok'
+Using pre-set license
+>>>>>>> main

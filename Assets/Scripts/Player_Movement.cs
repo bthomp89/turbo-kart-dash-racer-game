@@ -4,15 +4,15 @@ using UnityEngine.SceneManagement;
 
 public class Player_Movement : MonoBehaviour
 {
-    public float lateralSpeed = 3f; //Kart Upgrade Field --> speed moving L & R
-    public float jumpPower = 4.0f; //Kart Upgrade Field --> jump height
+    public float lateralSpeed = 6f; //Kart Upgrade Field --> speed moving L & R
+    public float jumpPower = 6f; //Kart Upgrade Field --> jump height
     public float duckTime = 0.5f; //Driver Upgrade Field --> duck length
 
 
     private Rigidbody rb;
     private Vector3 originalScale;
 
-    private bool isGrounded; 
+    private bool isGrounded;
     private bool isDucked = false;
     private bool isDriving = false;
 
@@ -23,15 +23,15 @@ public class Player_Movement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         originalScale = transform.localScale;
-        lateralSpeed = PlayerPrefs.GetFloat("Ls", 3f); 
-        jumpPower = PlayerPrefs.GetFloat("Jump", 4f);
+        lateralSpeed = PlayerPrefs.GetFloat("Ls", 6f);
+        jumpPower = PlayerPrefs.GetFloat("Jump", 6f);
         duckTime = PlayerPrefs.GetFloat("Duck", 0.5f);
     }
 
     public void LoadAndUpdateAttributes()
     {
         //load values from PlayerPrefs
-        lateralSpeed = PlayerPrefs.GetFloat("Ls"); 
+        lateralSpeed = PlayerPrefs.GetFloat("Ls");
         jumpPower = PlayerPrefs.GetFloat("Jump");
         duckTime = PlayerPrefs.GetFloat("Duck");
     }
@@ -73,7 +73,7 @@ public class Player_Movement : MonoBehaviour
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
-        
+
     }
 
     //ground check logic
@@ -122,8 +122,8 @@ public class Player_Movement : MonoBehaviour
     public void startDriving()
     {
         isDriving = true;
-       
+
     }
 
- 
+
 }
