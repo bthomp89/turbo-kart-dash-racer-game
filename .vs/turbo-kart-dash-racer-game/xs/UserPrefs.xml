@@ -1,12 +1,12 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Follow_Player.cs">
     <Files>
-      <File FileName="Assets/Scripts/Player_Movement.cs" Line="95" Column="50" />
-      <File FileName="Assets/Scripts/ManageRoadSpeed.cs" Line="162" Column="1" />
-      <File FileName="Assets/Scripts/MenuManager.cs" Line="40" Column="1" />
+      <File FileName="Assets/Scripts/Player_Movement.cs" Line="19" Column="1" />
+      <File FileName="Assets/Scripts/ManageRoadSpeed.cs" Line="19" Column="35" />
+      <File FileName="Assets/Scripts/MenuManager.cs" Line="66" Column="90" />
       <File FileName="Assets/Scripts/Road_Logic.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Spawn_Road.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Follow_Player.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Follow_Player.cs" Line="17" Column="45" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
