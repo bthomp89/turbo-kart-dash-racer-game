@@ -1506,6 +1506,11 @@ MonoBehaviour:
   characterPreviewSprites:
   - {fileID: 21300000, guid: fad08858d254a4135bfe51403dc5555e, type: 3}
   - {fileID: 21300000, guid: 8eddb9cf01eef4d589ffc175bd8378eb, type: 3}
+  - {fileID: 21300000, guid: a8bd4d34de75c42f2a68b37ce4ab6bfb, type: 3}
+  - {fileID: 21300000, guid: 7721e6f5b166e4d5289e2105da689aa2, type: 3}
+  - {fileID: 21300000, guid: 3fa00a74f9efa48f0916e7f1a4a31f33, type: 3}
+  - {fileID: 21300000, guid: 37d174ae12ded4008adae0aaa91a0905, type: 3}
+  - {fileID: 21300000, guid: f576015979af34fe89af30b2d1cf940f, type: 3}
   leftArrowButton: {fileID: 1244008963}
   rightArrowButton: {fileID: 1639875996}
   selectButton: {fileID: 1751976091}

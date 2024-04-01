@@ -44,8 +44,8 @@ public class MenuManager : MonoBehaviour
 
     private void LoadImageofCurrentCharacter()
     {
-       int index = PlayerPrefs.GetInt("SelectedCharacterIndex", 0);//default to 0
-       characterPreviewDisplay.sprite = characterPreviewSprites[index];
+       currentCharacterIndex = PlayerPrefs.GetInt("SelectedCharacterIndex", 0);//default to 0
+       characterPreviewDisplay.sprite = characterPreviewSprites[currentCharacterIndex];
 
     }
 
@@ -62,8 +62,8 @@ public class MenuManager : MonoBehaviour
     {
         // Save the selected character index for later use in game
         PlayerPrefs.SetInt("SelectedCharacterIndex", currentCharacterIndex);
+        PlayerPrefs.Save();
         // Load the game scene or close the menu as needed
-        Debug.Log("Character Selected: " + characterPrefabs[currentCharacterIndex].name);
     }
     // Called when the left arrow button is pressed
     public void OnLeftArrowPressed()

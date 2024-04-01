@@ -1095,6 +1095,11 @@ MonoBehaviour:
   characterPrefabs:
   - {fileID: 100000, guid: 771cc96cdfa23ab42a02aff4c68df57c, type: 3}
   - {fileID: 100004, guid: 57fd2d6d58bad3b4db136223456033a2, type: 3}
+  - {fileID: 100004, guid: daee663d4ecfb4a4fa88e5184d20c1fa, type: 3}
+  - {fileID: 100000, guid: cb89ac3fca0fdc440bf34a97429941f0, type: 3}
+  - {fileID: 100010, guid: b68a9ae8c772ef74aa880818364006ef, type: 3}
+  - {fileID: 100010, guid: 0da701b74ed77f24289278f224897b01, type: 3}
+  - {fileID: 100138, guid: 3190ce01b681380489bca51ac6a2e521, type: 3}
 --- !u!4 &1223910748
 Transform:
   m_ObjectHideFlags: 0
