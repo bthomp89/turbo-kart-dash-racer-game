@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class Player_Movement : MonoBehaviour
 {
-    public float lateralSpeed = 6f; //Kart Upgrade Field --> speed moving L & R
+    public float lateralSpeed = 7f; //Kart Upgrade Field --> speed moving L & R
     public float jumpPower = 6f; //Kart Upgrade Field --> jump height
     public float duckTime = 0.5f; //Driver Upgrade Field --> duck length
 
@@ -29,7 +29,7 @@ public class Player_Movement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         originalScale = transform.localScale;
-        lateralSpeed = PlayerPrefs.GetFloat("Ls", 6f);
+        lateralSpeed = PlayerPrefs.GetFloat("Ls", 7f);
         jumpPower = PlayerPrefs.GetFloat("Jump", 6f);
         duckTime = PlayerPrefs.GetFloat("Duck", 0.5f);
     }
