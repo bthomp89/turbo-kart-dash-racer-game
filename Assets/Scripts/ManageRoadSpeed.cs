@@ -15,6 +15,9 @@ public class ManageRoadSpeed : MonoBehaviour
     private bool isGameStarted = false;
     private float gameStartTime;
     private bool isMenuOpen = false;
+    private bool isControlsMenuOpen = false;
+    private string activeLevelSceneName;
+
 
     private Player_Movement motor;
     private GameObject startText;
@@ -54,39 +57,26 @@ public class ManageRoadSpeed : MonoBehaviour
 
     private void Update()
     {
-        //starting game logic
         if (Input.GetKeyDown(KeyCode.T) && !isGameStarted)
         {
-            isGameStarted = true;
-            if (startText != null)
-                startText.SetActive(false); //hide startText
-            motor.startDriving();
-            CurrentSpeed = initialSpeed;
-            gameStartTime = Time.time; //record game start time
-
-
-        } //logic for open/closing menu
-        else if (Input.GetKeyDown(KeyCode.M) && !isGameStarted && !isMenuOpen)
-        {
-
-            StartCoroutine(LoadMenuScene()); //opening menu logic
+            StartGame();
         }
-        else if (Input.GetKeyDown(KeyCode.M) && !isGameStarted && isMenuOpen)
+        else if (Input.GetKeyDown(KeyCode.M))
         {
-            ControlsMenu menuManager = FindObjectOfType<ControlsMenu>();
-            if (menuManager != null)
+            if (!isGameStarted)
             {
-                menuManager.UpdateSliders(); //updates values from menu sliders
+                if (!isMenuOpen && !isControlsMenuOpen)
+                {
+                    activeLevelSceneName = SceneManager.GetActiveScene().name;
+                    StartCoroutine(LoadMenuScene("Menu", true));
+                }
+                else if (isMenuOpen && !isControlsMenuOpen)
+                {
+                    StartCoroutine(LoadMenuScene("Menu", false));
+                    SceneManager.LoadScene(activeLevelSceneName);
+
+                }
             }
-
-            SceneManager.UnloadSceneAsync("Menu");
-            isMenuOpen = false;
-            startText.SetActive(true);
-            motor.LoadAndUpdateAttributes();
-
-            SpawnSelectedCharacter();
-
-
         }
         else if (isGameStarted)
         {
@@ -115,6 +105,33 @@ public class ManageRoadSpeed : MonoBehaviour
                 isHighScoreEligble(highScore);
             }
             UpdateScores();
+        }
+    }
+
+    public void StartGame()
+    {
+        isGameStarted = true;
+        activeLevelSceneName = SceneManager.GetActiveScene().name; // Store the current scene
+
+        if (startText != null) startText.SetActive(false);
+        motor.startDriving();
+        CurrentSpeed = initialSpeed;
+        gameStartTime = Time.time;
+    }
+
+    public void OpenControlsMenu()
+    {
+        if (isMenuOpen && !isControlsMenuOpen)
+        {
+            StartCoroutine(LoadMenuScene("Controls", true));
+        }
+    }
+
+    public void CloseControlsMenu()
+    {
+        if (isControlsMenuOpen)
+        {
+            StartCoroutine(LoadMenuScene("Controls", false));
         }
     }
 
@@ -166,6 +183,8 @@ public class ManageRoadSpeed : MonoBehaviour
     public void ResetGame()
     {
         isGameStarted = false;
+        activeLevelSceneName = SceneManager.GetActiveScene().name; // Store the current scene
+
         if (startText != null)
             startText.SetActive(true);
     }
@@ -196,27 +215,24 @@ public class ManageRoadSpeed : MonoBehaviour
         PlayerPrefs.Save();
     }
 
-    IEnumerator LoadMenuScene()
+
+    IEnumerator LoadMenuScene(string sceneName, bool loadScene)
     {
-        //load the scene asynchronously
-        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync("Menu", LoadSceneMode.Additive);
-
-        //wait until the asynchronous scene fully loads
-        while (!asyncLoad.isDone)
+        if (loadScene)
         {
-            yield return null;
+            AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Additive);
+            while (!asyncLoad.isDone) yield return null;
+        }
+        else
+        {
+            AsyncOperation asyncUnload = SceneManager.UnloadSceneAsync(sceneName);
+            while (!asyncUnload.isDone) yield return null;
         }
 
-        //now that the scene is loaded, find the MenuManager
-        ControlsMenu menuManager = FindObjectOfType<ControlsMenu>();
-        if (menuManager != null)
-        {
-            menuManager.UpdateMenu(); //update value of sliders in menu
-        }
-
-        isMenuOpen = true;
-        startText.SetActive(false);
+        isMenuOpen = sceneName == "Menu" ? loadScene : isMenuOpen;
+        isControlsMenuOpen = sceneName == "Controls" ? loadScene : isControlsMenuOpen;
     }
+
 
     void isHighScoreEligble(float highscore)
     {
