@@ -73,7 +73,7 @@ public class ManageRoadSpeed : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.M) && !isGameStarted && isMenuOpen)
         {
-            MenuManager menuManager = FindObjectOfType<MenuManager>();
+            ControlsMenu menuManager = FindObjectOfType<ControlsMenu>();
             if (menuManager != null)
             {
                 menuManager.UpdateSliders(); //updates values from menu sliders
@@ -208,7 +208,7 @@ public class ManageRoadSpeed : MonoBehaviour
         }
 
         //now that the scene is loaded, find the MenuManager
-        MenuManager menuManager = FindObjectOfType<MenuManager>();
+        ControlsMenu menuManager = FindObjectOfType<ControlsMenu>();
         if (menuManager != null)
         {
             menuManager.UpdateMenu(); //update value of sliders in menu

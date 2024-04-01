@@ -5,14 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
 {
-    public Slider controlSlider;
-    public Slider duckSlider;
-    public Slider jumpSlider;
-    public Slider lsSlider;
+    // public Slider controlSlider;
+    // public Slider duckSlider;
+    // public Slider jumpSlider;
+    // public Slider lsSlider;
     public Button level1Button;
     public Button level2Button;
     public Button level3Button;
     public Button level4Button;
+    public Button controlsButton;
+
     [SerializeField] private GameObject[] characterPrefabs;
     [SerializeField] private Image characterPreviewDisplay;
     [SerializeField] private Sprite[] characterPreviewSprites; // Assign the sprites in the Inspector
@@ -31,6 +33,7 @@ public class MenuManager : MonoBehaviour
         level2Button.onClick.AddListener(LoadLevel2Scene);
         level3Button.onClick.AddListener(LoadLevel3Scene);
         level4Button.onClick.AddListener(LoadLevel4Scene);
+        controlsButton.onClick.AddListener(LoadControlMenu);
 
         leftArrowButton.onClick.AddListener(OnLeftArrowPressed);
         rightArrowButton.onClick.AddListener(OnRightArrowPressed);
@@ -79,28 +82,28 @@ public class MenuManager : MonoBehaviour
         DisplayCurrentCharacter();
     }
 
-    //call this method when closing the menu
-    public void UpdateSliders()
-    {
+    // //call this method when closing the menu
+    // public void UpdateSliders()
+    // {
 
-        //get the slider value as an int
-        int controlSliderValue = (int)controlSlider.value;
-        int duckSliderValue = (int)duckSlider.value;
-        int jumpSliderValue = (int)jumpSlider.value;
-        int lsSliderValue = (int)lsSlider.value;
+    //     //get the slider value as an int
+    //     int controlSliderValue = (int)controlSlider.value;
+    //     int duckSliderValue = (int)duckSlider.value;
+    //     int jumpSliderValue = (int)jumpSlider.value;
+    //     int lsSliderValue = (int)lsSlider.value;
 
-        //update the attributes based on sliders
-        ManageRoadSpeed.Instance.updateAttributes(controlSliderValue, duckSliderValue, jumpSliderValue, lsSliderValue);
-    }
+    //     //update the attributes based on sliders
+    //     ManageRoadSpeed.Instance.updateAttributes(controlSliderValue, duckSliderValue, jumpSliderValue, lsSliderValue);
+    // }
 
     //update value of sliders
-    public void UpdateMenu()
-    {
-        controlSlider.value = PlayerPrefs.GetInt("ControlSlider", 1);
-        duckSlider.value = PlayerPrefs.GetInt("DuckSlider", 1);
-        jumpSlider.value = PlayerPrefs.GetInt("JumpSlider", 1);
-        lsSlider.value = PlayerPrefs.GetInt("LsSlider", 1);
-    }
+    // public void UpdateMenu()
+    // {
+    //     controlSlider.value = PlayerPrefs.GetInt("ControlSlider", 1);
+    //     duckSlider.value = PlayerPrefs.GetInt("DuckSlider", 1);
+    //     jumpSlider.value = PlayerPrefs.GetInt("JumpSlider", 1);
+    //     lsSlider.value = PlayerPrefs.GetInt("LsSlider", 1);
+    // }
 
     public void LoadLevel1Scene()
     {
@@ -118,4 +121,10 @@ public class MenuManager : MonoBehaviour
     {
         SceneManager.LoadScene("Tara_Level");
     }
+
+    public void LoadControlMenu()
+    {
+        SceneManager.LoadScene("Controls");
+    }
+
 }
