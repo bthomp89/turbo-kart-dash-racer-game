@@ -55,7 +55,7 @@ public class ManageRoadSpeed : MonoBehaviour
     private void Update()
     {
         //starting game logic
-        if (Input.GetKeyDown(KeyCode.Space) && !isGameStarted)
+        if (Input.GetKeyDown(KeyCode.T) && !isGameStarted)
         {
             isGameStarted = true;
             if (startText != null)
