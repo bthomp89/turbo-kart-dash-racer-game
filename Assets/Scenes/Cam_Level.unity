@@ -505,7 +505,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Press Space to Start Round
+  m_Text: 'Press T to Start Round
 
 '
 --- !u!222 &571784809
@@ -715,7 +715,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 726823867}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -45}
+  m_LocalPosition: {x: 0, y: 0, z: -75}
   m_LocalScale: {x: 25, y: 25, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -778,68 +778,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43e2eae5c791c4261aa44f7272867fde, type: 3}
---- !u!1001 &822969331
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 100000, guid: 771cc96cdfa23ab42a02aff4c68df57c, type: 3}
-      propertyPath: m_Name
-      value: Kart
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 771cc96cdfa23ab42a02aff4c68df57c, type: 3}
-      propertyPath: m_RootOrder
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 771cc96cdfa23ab42a02aff4c68df57c, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 771cc96cdfa23ab42a02aff4c68df57c, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 771cc96cdfa23ab42a02aff4c68df57c, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -10
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 771cc96cdfa23ab42a02aff4c68df57c, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 771cc96cdfa23ab42a02aff4c68df57c, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 771cc96cdfa23ab42a02aff4c68df57c, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 771cc96cdfa23ab42a02aff4c68df57c, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 771cc96cdfa23ab42a02aff4c68df57c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 771cc96cdfa23ab42a02aff4c68df57c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 771cc96cdfa23ab42a02aff4c68df57c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 771cc96cdfa23ab42a02aff4c68df57c, type: 3}
---- !u!4 &822969332 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 400000, guid: 771cc96cdfa23ab42a02aff4c68df57c, type: 3}
-  m_PrefabInstance: {fileID: 822969331}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &832595485
 GameObject:
   m_ObjectHideFlags: 0
@@ -1015,7 +953,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfd956355ecf648a7b617e79d1d7670a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 822969332}
+  player: {fileID: 0}
 --- !u!1001 &963622747
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1268,6 +1206,14 @@ MonoBehaviour:
   highScoreText: {fileID: 832595487}
   speedText: {fileID: 408221414}
   skillPointsText: {fileID: 304972410}
+  characterPrefabs:
+  - {fileID: 100000, guid: 771cc96cdfa23ab42a02aff4c68df57c, type: 3}
+  - {fileID: 100004, guid: 57fd2d6d58bad3b4db136223456033a2, type: 3}
+  - {fileID: 100004, guid: daee663d4ecfb4a4fa88e5184d20c1fa, type: 3}
+  - {fileID: 100000, guid: cb89ac3fca0fdc440bf34a97429941f0, type: 3}
+  - {fileID: 100010, guid: b68a9ae8c772ef74aa880818364006ef, type: 3}
+  - {fileID: 100010, guid: 0da701b74ed77f24289278f224897b01, type: 3}
+  - {fileID: 100138, guid: 3190ce01b681380489bca51ac6a2e521, type: 3}
 --- !u!4 &1223910748
 Transform:
   m_ObjectHideFlags: 0

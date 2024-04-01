@@ -1,67 +1,58 @@
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-
+using UnityEngine.UI;
 
 public class MenuManager : MonoBehaviour
 {
-    public Slider controlSlider;
-    public Slider duckSlider;
-    public Slider jumpSlider;
-    public Slider lsSlider;
-    public Button level1Button;
-    public Button level2Button;
-    public Button level3Button;
-    public Button level4Button;
+    public Button level1Button, level2Button, level3Button, level4Button, controlsButton;
+    [SerializeField] private GameObject[] characterPrefabs;
+    [SerializeField] private Image characterPreviewDisplay;
+    [SerializeField] private Sprite[] characterPreviewSprites;
+    [SerializeField] private Button leftArrowButton, rightArrowButton, selectButton;
 
-
-
+    private int currentCharacterIndex = 0;
 
     void Start()
     {
-        level1Button.onClick.AddListener(LoadLevel1Scene);
-        level2Button.onClick.AddListener(LoadLevel2Scene);
-        level3Button.onClick.AddListener(LoadLevel3Scene);
-        level4Button.onClick.AddListener(LoadLevel4Scene);
+        level1Button.onClick.AddListener(() => SceneManager.LoadScene("Racer_Proto"));
+        level2Button.onClick.AddListener(() => SceneManager.LoadScene("Cam_Level"));
+        level3Button.onClick.AddListener(() => SceneManager.LoadScene("Alex_Level"));
+        level4Button.onClick.AddListener(() => SceneManager.LoadScene("Tara_Level"));
+        controlsButton.onClick.AddListener(() => ManageRoadSpeed.Instance.OpenControlsMenu());
+
+        leftArrowButton.onClick.AddListener(OnLeftArrowPressed);
+        rightArrowButton.onClick.AddListener(OnRightArrowPressed);
+        selectButton.onClick.AddListener(SelectCharacter);
+
+        LoadImageOfCurrentCharacter();
     }
 
-    //call this method when closing the menu
-    public void UpdateSliders()
+    void LoadImageOfCurrentCharacter()
     {
-
-        //get the slider value as an int
-        int controlSliderValue = (int)controlSlider.value;
-        int duckSliderValue = (int)duckSlider.value;
-        int jumpSliderValue = (int)jumpSlider.value;
-        int lsSliderValue = (int)lsSlider.value;
-
-        //update the attributes based on sliders
-        ManageRoadSpeed.Instance.updateAttributes(controlSliderValue, duckSliderValue, jumpSliderValue, lsSliderValue);
+        currentCharacterIndex = PlayerPrefs.GetInt("SelectedCharacterIndex", 0);
+        characterPreviewDisplay.sprite = characterPreviewSprites[currentCharacterIndex];
     }
 
-    //update value of sliders
-    public void UpdateMenu()
+    void DisplayCurrentCharacter()
     {
-        controlSlider.value = PlayerPrefs.GetInt("ControlSlider", 1);
-        duckSlider.value = PlayerPrefs.GetInt("DuckSlider", 1);
-        jumpSlider.value = PlayerPrefs.GetInt("JumpSlider", 1);
-        lsSlider.value = PlayerPrefs.GetInt("LsSlider", 1);
+        characterPreviewDisplay.sprite = characterPreviewSprites[currentCharacterIndex];
     }
 
-    public void LoadLevel1Scene()
+    public void SelectCharacter()
     {
-        SceneManager.LoadScene("Racer_Proto");
+        PlayerPrefs.SetInt("SelectedCharacterIndex", currentCharacterIndex);
+        PlayerPrefs.Save();
     }
-    public void LoadLevel2Scene()
+
+    void OnLeftArrowPressed()
     {
-        SceneManager.LoadScene("Cam_Level");
+        currentCharacterIndex = currentCharacterIndex > 0 ? currentCharacterIndex - 1 : characterPreviewSprites.Length - 1;
+        DisplayCurrentCharacter();
     }
-    public void LoadLevel3Scene()
+
+    void OnRightArrowPressed()
     {
-        SceneManager.LoadScene("Alex_Level");
-    }
-    public void LoadLevel4Scene()
-    {
-        SceneManager.LoadScene("Tara_Level");
+        currentCharacterIndex = currentCharacterIndex < characterPreviewSprites.Length - 1 ? currentCharacterIndex + 1 : 0;
+        DisplayCurrentCharacter();
     }
 }

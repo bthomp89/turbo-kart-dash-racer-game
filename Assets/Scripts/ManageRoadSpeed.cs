@@ -15,6 +15,9 @@ public class ManageRoadSpeed : MonoBehaviour
     private bool isGameStarted = false;
     private float gameStartTime;
     private bool isMenuOpen = false;
+    private bool isControlsMenuOpen = false;
+    private string activeLevelSceneName;
+
 
     private Player_Movement motor;
     private GameObject startText;
@@ -29,12 +32,14 @@ public class ManageRoadSpeed : MonoBehaviour
 
     private int controlSlider, duckSlider, jumpSlider, lsSlider;
 
+    [SerializeField] private GameObject[] characterPrefabs; // Add this to assign your character prefabs in the Inspector
+
+
     private void Awake()
     {
         if (Instance == null)
         {
             Instance = this;
-            motor = GameObject.FindGameObjectWithTag("Player").GetComponent<Player_Movement>();
             startText = GameObject.FindGameObjectWithTag("StartText");
         }
         else
@@ -45,50 +50,33 @@ public class ManageRoadSpeed : MonoBehaviour
 
     void Start()
     {
-        //load PlayerPrefs at the start of the game
-        highScore = PlayerPrefs.GetFloat("HighScore", 0);
-        skillPoints = PlayerPrefs.GetInt("SkillPoints", 0);
-        controlSlider = PlayerPrefs.GetInt("ControlSlider", 1);
-        duckSlider = PlayerPrefs.GetInt("DuckSlider", 1);
-        jumpSlider = PlayerPrefs.GetInt("JumpSlider", 1);
-        lsSlider = PlayerPrefs.GetInt("LsSlider", 1);
-
-        updateAttributes(controlSlider, duckSlider, jumpSlider, lsSlider);
+        LoadPlayerPreferences();
+        SpawnSelectedCharacter();
         UpdateScores();
     }
 
     private void Update()
     {
-        //starting game logic
-        if (Input.GetKeyDown(KeyCode.Space) && !isGameStarted)
+        if (Input.GetKeyDown(KeyCode.T) && !isGameStarted)
         {
-            isGameStarted = true;
-            if (startText != null)
-                startText.SetActive(false); //hide startText
-            motor.startDriving();
-            CurrentSpeed = initialSpeed;
-            gameStartTime = Time.time; //record game start time
-
-
-        } //logic for open/closing menu
-        else if (Input.GetKeyDown(KeyCode.M) && !isGameStarted && !isMenuOpen)
-        {
-
-            StartCoroutine(LoadMenuScene()); //opening menu logic
+            StartGame();
         }
-        else if (Input.GetKeyDown(KeyCode.M) && !isGameStarted && isMenuOpen)
+        else if (Input.GetKeyDown(KeyCode.M))
         {
-            MenuManager menuManager = FindObjectOfType<MenuManager>();
-            if (menuManager != null)
+            if (!isGameStarted)
             {
-                menuManager.UpdateSliders(); //updates values from menu sliders
+                if (!isMenuOpen && !isControlsMenuOpen)
+                {
+                    activeLevelSceneName = SceneManager.GetActiveScene().name;
+                    StartCoroutine(LoadMenuScene("Menu", true));
+                }
+                else if (isMenuOpen && !isControlsMenuOpen)
+                {
+                    StartCoroutine(LoadMenuScene("Menu", false));
+                    SceneManager.LoadScene(activeLevelSceneName);
+
+                }
             }
-
-            SceneManager.UnloadSceneAsync("Menu");
-            isMenuOpen = false;
-            startText.SetActive(true);
-            motor.LoadAndUpdateAttributes();
-
         }
         else if (isGameStarted)
         {
@@ -120,6 +108,33 @@ public class ManageRoadSpeed : MonoBehaviour
         }
     }
 
+    public void StartGame()
+    {
+        isGameStarted = true;
+        activeLevelSceneName = SceneManager.GetActiveScene().name; // Store the current scene
+
+        if (startText != null) startText.SetActive(false);
+        motor.startDriving();
+        CurrentSpeed = initialSpeed;
+        gameStartTime = Time.time;
+    }
+
+    public void OpenControlsMenu()
+    {
+        if (isMenuOpen && !isControlsMenuOpen)
+        {
+            StartCoroutine(LoadMenuScene("Controls", true));
+        }
+    }
+
+    public void CloseControlsMenu()
+    {
+        if (isControlsMenuOpen)
+        {
+            StartCoroutine(LoadMenuScene("Controls", false));
+        }
+    }
+
     public void UpdateScores()
     {
         //update on screen texts
@@ -130,10 +145,46 @@ public class ManageRoadSpeed : MonoBehaviour
 
     }
 
+    private void LoadPlayerPreferences()
+    {
+        //load PlayerPrefs at the start of the game
+        highScore = PlayerPrefs.GetFloat("HighScore", 0);
+        skillPoints = PlayerPrefs.GetInt("SkillPoints", 0);
+        controlSlider = PlayerPrefs.GetInt("ControlSlider", 1);
+        duckSlider = PlayerPrefs.GetInt("DuckSlider", 1);
+        jumpSlider = PlayerPrefs.GetInt("JumpSlider", 1);
+        lsSlider = PlayerPrefs.GetInt("LsSlider", 1);
+
+        updateAttributes(controlSlider, duckSlider, jumpSlider, lsSlider);
+    }
+
+    private void SpawnSelectedCharacter()
+    {
+        // Destroy the old character if there is one
+        GameObject oldPlayer = GameObject.FindGameObjectWithTag("Player");
+        if (oldPlayer != null) Destroy(oldPlayer);
+
+        // Get the selected character index from PlayerPrefs
+        int selectedCharacterIndex = PlayerPrefs.GetInt("SelectedCharacterIndex", 0); // Default to 0
+
+        // Define the start position
+        Vector3 startPosition = new Vector3(0f, 0f, -10f); // The desired spawn position
+
+        // Instantiate the selected character prefab
+        GameObject playerPrefab = characterPrefabs[selectedCharacterIndex];
+        GameObject playerInstance = Instantiate(playerPrefab, startPosition, Quaternion.identity);
+
+        // Set the 'motor' reference to the new instance
+        motor = playerInstance.GetComponent<Player_Movement>();
+
+    }
+
     //game reset logic
     public void ResetGame()
     {
         isGameStarted = false;
+        activeLevelSceneName = SceneManager.GetActiveScene().name; // Store the current scene
+
         if (startText != null)
             startText.SetActive(true);
     }
@@ -164,27 +215,24 @@ public class ManageRoadSpeed : MonoBehaviour
         PlayerPrefs.Save();
     }
 
-    IEnumerator LoadMenuScene()
+
+    IEnumerator LoadMenuScene(string sceneName, bool loadScene)
     {
-        //load the scene asynchronously
-        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync("Menu", LoadSceneMode.Additive);
-
-        //wait until the asynchronous scene fully loads
-        while (!asyncLoad.isDone)
+        if (loadScene)
         {
-            yield return null;
+            AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Additive);
+            while (!asyncLoad.isDone) yield return null;
+        }
+        else
+        {
+            AsyncOperation asyncUnload = SceneManager.UnloadSceneAsync(sceneName);
+            while (!asyncUnload.isDone) yield return null;
         }
 
-        //now that the scene is loaded, find the MenuManager
-        MenuManager menuManager = FindObjectOfType<MenuManager>();
-        if (menuManager != null)
-        {
-            menuManager.UpdateMenu(); //update value of sliders in menu
-        }
-
-        isMenuOpen = true;
-        startText.SetActive(false);
+        isMenuOpen = sceneName == "Menu" ? loadScene : isMenuOpen;
+        isControlsMenuOpen = sceneName == "Controls" ? loadScene : isControlsMenuOpen;
     }
+
 
     void isHighScoreEligble(float highscore)
     {

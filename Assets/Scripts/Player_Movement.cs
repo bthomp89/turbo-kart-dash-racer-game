@@ -16,6 +16,12 @@ public class Player_Movement : MonoBehaviour
     private bool isDucked = false;
     private bool isDriving = false;
 
+    public float invincibilityDuration = 5f; // Duration of invincibility
+    private int invincibilityUses = 3; // Number of invincibility uses per round
+    private bool isInvincible = false; // Is the player currently invincible
+
+    private Vector3 invincibleScale = new Vector3(1.5f, 1.5f, 1.5f); // The scale when the player is invincible
+
 
 
 
@@ -59,6 +65,33 @@ public class Player_Movement : MonoBehaviour
             Duck();
             StartCoroutine(ChangeShapeBackAfterDelay(duckTime));
         }
+
+        if (Input.GetKeyDown(KeyCode.Space) && invincibilityUses > 0 && !isInvincible)
+        {
+            StartCoroutine(ActivateInvincibility());
+        }
+    }
+
+
+    IEnumerator ActivateInvincibility()
+    {
+        // Increase player's size to indicate invincibility
+        originalScale = transform.localScale; // Store the original scale
+        transform.localScale = invincibleScale;
+
+        isInvincible = true;
+        invincibilityUses--; // Decrease the number of available invincibility uses
+
+        yield return new WaitForSeconds(invincibilityDuration);
+
+        // After the duration, if the player hasn't hit an obstacle, turn off invincibility
+        if (isInvincible)
+        {
+            isInvincible = false;
+            // Reset player's size
+            transform.localScale = originalScale;
+        }
+        // Update UI to reflect the change, if you have a UI element for this
     }
 
     //crash logic
@@ -69,8 +102,20 @@ public class Player_Movement : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
 
-        if (other.gameObject.CompareTag("Obstacle"))
+        if (other.gameObject.CompareTag("Obstacle") && isInvincible)
         {
+            // If the player is invincible and hits an obstacle, turn off invincibility
+            isInvincible = false;
+            Destroy(other.gameObject);
+            transform.localScale = originalScale;
+            StopAllCoroutines();
+        
+            // Stop the invincibility coroutine in case it's still running
+            StopAllCoroutines();
+        }
+        else if (other.gameObject.CompareTag("Obstacle"))
+        {
+            // If the player is not invincible and hits an obstacle, reset the level
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
 
