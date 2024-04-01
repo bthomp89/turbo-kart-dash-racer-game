@@ -1,8 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ManageRoadSpeed.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Follow_Player.cs">
     <Files>
-      <File FileName="Assets/Scripts/Player_Movement.cs" Line="19" Column="1" />
-      <File FileName="Assets/Scripts/ManageRoadSpeed.cs" Line="19" Column="35" />
+      <File FileName="Assets/Scripts/Player_Movement.cs" Line="22" Column="1" />
+      <File FileName="Assets/Scripts/ManageRoadSpeed.cs" Line="40" Column="68" />
+      <File FileName="Assets/Scripts/Follow_Player.cs" Line="8" Column="5" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
