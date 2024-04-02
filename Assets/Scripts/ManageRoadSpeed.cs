@@ -22,9 +22,9 @@ public class ManageRoadSpeed : MonoBehaviour
     private Player_Movement motor;
     private GameObject startText;
 
-    public Text scoreText, highScoreText, speedText, skillPointsText;
+    public Text scoreText, highScoreText, speedText, skillPointsText, coinsText;
     private float score, highScore;
-
+    private int coins;
     private int skillPoints;
 
     private float lateralSpeed, jumpPower;
@@ -93,6 +93,7 @@ public class ManageRoadSpeed : MonoBehaviour
 
             //score calculator logic
             score = (Time.time - gameStartTime) * 10;
+            coins = PlayerPrefs.GetInt("Coins", 0);
 
             //update highscore logic
             if (score > highScore)
@@ -106,6 +107,13 @@ public class ManageRoadSpeed : MonoBehaviour
             }
             UpdateScores();
         }
+    }
+
+    public void updateCoins()
+    {
+        coins = PlayerPrefs.GetInt("Coins", 0);
+        coins += 10;
+        PlayerPrefs.SetInt("Coins", coins);
     }
 
     public void StartGame()
@@ -142,7 +150,7 @@ public class ManageRoadSpeed : MonoBehaviour
         highScoreText.text = "High Score: " + highScore.ToString("F2");
         speedText.text = "Speed: " + (-10 * CurrentSpeed).ToString("F2") + "mph";
         skillPointsText.text = "Skill Points: " + skillPoints.ToString(); //change onscreen text
-
+        coinsText.text = "Coins: " + coins.ToString(); //change onscreen text
     }
 
     private void LoadPlayerPreferences()
@@ -154,6 +162,8 @@ public class ManageRoadSpeed : MonoBehaviour
         duckSlider = PlayerPrefs.GetInt("DuckSlider", 1);
         jumpSlider = PlayerPrefs.GetInt("JumpSlider", 1);
         lsSlider = PlayerPrefs.GetInt("LsSlider", 1);
+        coins = PlayerPrefs.GetInt("Coins", 0);
+
 
         updateAttributes(controlSlider, duckSlider, jumpSlider, lsSlider);
     }
