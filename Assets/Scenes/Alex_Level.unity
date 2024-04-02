@@ -1202,11 +1202,11 @@ MonoBehaviour:
   initialSpeed: -2.5
   acceleration: -0.7
   maxGameSpeed: -20
-  scoreText: {fileID: 0}
-  highScoreText: {fileID: 0}
-  speedText: {fileID: 0}
-  skillPointsText: {fileID: 0}
-  coinsText: {fileID: 0}
+  scoreText: {fileID: 570884900}
+  highScoreText: {fileID: 1626360580}
+  speedText: {fileID: 313837235}
+  skillPointsText: {fileID: 865883775}
+  coinsText: {fileID: 1161346629}
   characterPrefabs:
   - {fileID: 100000, guid: 771cc96cdfa23ab42a02aff4c68df57c, type: 3}
   - {fileID: 100004, guid: 57fd2d6d58bad3b4db136223456033a2, type: 3}
