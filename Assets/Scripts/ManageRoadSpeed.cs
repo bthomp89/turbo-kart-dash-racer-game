@@ -10,7 +10,7 @@ public class ManageRoadSpeed : MonoBehaviour
     public float CurrentSpeed { get; private set; }
     [SerializeField] private float initialSpeed = -2.5f;
     [SerializeField] private float acceleration = -0.7f; //Driver Upgrade --> slows speed down giving driver more control
-    [SerializeField] private float maxGameSpeed = -20f;
+    [SerializeField] private float maxGameSpeed = -10f;
 
     private bool isGameStarted = false;
     private float gameStartTime;

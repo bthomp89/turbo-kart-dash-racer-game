@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.75
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.38991913, g: 0.43412378, b: 0.5036715, a: 0.75}
+  m_IndirectSpecularColor: {r: 0.38991907, g: 0.4341236, b: 0.50367135, a: 0.75}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6802,7 +6802,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   initialSpeed: -2.5
   acceleration: -0.7
-  maxGameSpeed: -20
+  maxGameSpeed: -15
   scoreText: {fileID: 1564030447}
   highScoreText: {fileID: 2052620776}
   speedText: {fileID: 1664906949}
