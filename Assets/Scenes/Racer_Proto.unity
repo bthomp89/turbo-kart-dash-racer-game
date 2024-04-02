@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.75
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.3899194, g: 0.43412402, b: 0.5036717, a: 0.75}
+  m_IndirectSpecularColor: {r: 0.38991913, g: 0.43412378, b: 0.5036715, a: 0.75}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6803,11 +6803,11 @@ MonoBehaviour:
   initialSpeed: -2.5
   acceleration: -0.7
   maxGameSpeed: -20
-  scoreText: {fileID: 0}
-  highScoreText: {fileID: 0}
-  speedText: {fileID: 0}
-  skillPointsText: {fileID: 0}
-  coinsText: {fileID: 0}
+  scoreText: {fileID: 1564030447}
+  highScoreText: {fileID: 2052620776}
+  speedText: {fileID: 1664906949}
+  skillPointsText: {fileID: 871949936}
+  coinsText: {fileID: 1716600140}
   characterPrefabs:
   - {fileID: 100000, guid: 771cc96cdfa23ab42a02aff4c68df57c, type: 3}
   - {fileID: 100004, guid: 57fd2d6d58bad3b4db136223456033a2, type: 3}
