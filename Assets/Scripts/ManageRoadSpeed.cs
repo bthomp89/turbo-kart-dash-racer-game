@@ -149,7 +149,7 @@ public class ManageRoadSpeed : MonoBehaviour
         scoreText.text = "Score: " + score.ToString("F2");
         highScoreText.text = "High Score: " + highScore.ToString("F2");
         speedText.text = "Speed: " + (-10 * CurrentSpeed).ToString("F2") + "mph";
-        skillPointsText.text = "Skill Points: " + skillPoints.ToString(); //change onscreen text
+        skillPointsText.text = "XP: " + skillPoints.ToString(); //change onscreen text
         coinsText.text = "Coins: " + coins.ToString(); //change onscreen text
     }
 
