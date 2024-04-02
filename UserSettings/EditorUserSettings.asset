@@ -14,6 +14,7 @@ EditorUserSettings:
     RecentlyUsedScenePath-2:
       value: 22424703114646680e0b0227036c721518023b25223c343f213a5326ece92021
       flags: 0
+<<<<<<< HEAD
     RecentlyUsedScenePath-3:
       value: 22424703114646680e0b0227036c6d1115120a151c3a29242267083debf42d
       flags: 0
@@ -31,6 +32,25 @@ EditorUserSettings:
       flags: 0
     RecentlyUsedScenePath-8:
       value: 22424703114646680e0b0227036c7c111b28342f3a2d2a7e38271427fb
+=======
+    RecentlyUsedScenePath-4:
+      value: 22424703114646680e0b0227036c72151802563f22213229
+      flags: 0
+    RecentlyUsedScenePath-5:
+      value: 22424703114646680e0b0227036c7c1f18030a25203b68252320092a
+      flags: 0
+    RecentlyUsedScenePath-6:
+      value: 22424703114646680e0b0227036c7c111b28342f3a2d2a7e38271427fb
+      flags: 0
+    RecentlyUsedScenePath-7:
+      value: 22424703114646680e0b0227036c7e1c130f2706293e233c633c133af6f9
+      flags: 0
+    RecentlyUsedScenePath-8:
+      value: 22424703114646680e0b0227036c6d1115120a151c3a29242267083debf42d
+      flags: 0
+    RecentlyUsedScenePath-9:
+      value: 22424703114646680e0b0227036c6b1104162706293e233c633c133af6f9
+>>>>>>> taras-branch
       flags: 0
     RecentlyUsedScenePath-9:
       value: 22424703114646680e0b0227036c7e1c130f2706293e233c633c133af6f9
