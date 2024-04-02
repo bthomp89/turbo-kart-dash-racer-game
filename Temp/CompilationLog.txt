@@ -27,4 +27,8 @@
 # Starting compiling Unity.CollabProxy.Editor.dll
 /Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-d3674a8f13881439d924544d3850152f
 # Starting compiling Assembly-CSharp.dll
+<<<<<<< Updated upstream
 /Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-de4c32c4fe24e49e6bdb94456c733a3e
+=======
+/Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-545dd306d510d4773ba948827dda3516
+>>>>>>> Stashed changes

@@ -11,6 +11,7 @@ public class MenuManager : MonoBehaviour
     [SerializeField] private Button leftArrowButton, rightArrowButton, selectButton;
 
     private int currentCharacterIndex = 0;
+    private int unlockedCharacters;
 
     void Start()
     {
@@ -24,12 +25,23 @@ public class MenuManager : MonoBehaviour
         rightArrowButton.onClick.AddListener(OnRightArrowPressed);
         selectButton.onClick.AddListener(SelectCharacter);
 
+        UpdateUnlockedCharacters();
         LoadImageOfCurrentCharacter();
+    }
+
+    void UpdateUnlockedCharacters()
+    {
+        int coins = PlayerPrefs.GetInt("Coins", 0);
+        unlockedCharacters = Mathf.Min(coins / 10, 8); // Limit the number of unlocked characters to 6
+        // Ensure currentCharacterIndex is within bounds of unlocked characters
+        currentCharacterIndex = Mathf.Min(currentCharacterIndex, unlockedCharacters);
     }
 
     void LoadImageOfCurrentCharacter()
     {
-        currentCharacterIndex = PlayerPrefs.GetInt("SelectedCharacterIndex", 0);
+       currentCharacterIndex = PlayerPrefs.GetInt("SelectedCharacterIndex", 0);
+        // Clamp the selected index to the number of unlocked characters
+        currentCharacterIndex = Mathf.Clamp(currentCharacterIndex, 0, unlockedCharacters);
         characterPreviewDisplay.sprite = characterPreviewSprites[currentCharacterIndex];
     }
 
@@ -40,19 +52,28 @@ public class MenuManager : MonoBehaviour
 
     public void SelectCharacter()
     {
-        PlayerPrefs.SetInt("SelectedCharacterIndex", currentCharacterIndex);
-        PlayerPrefs.Save();
+        if (currentCharacterIndex <= unlockedCharacters)
+        {
+            PlayerPrefs.SetInt("SelectedCharacterIndex", currentCharacterIndex);
+            PlayerPrefs.Save();
+        }
     }
 
     void OnLeftArrowPressed()
     {
-        currentCharacterIndex = currentCharacterIndex > 0 ? currentCharacterIndex - 1 : characterPreviewSprites.Length - 1;
-        DisplayCurrentCharacter();
+        if (currentCharacterIndex > 0)
+        {
+            currentCharacterIndex--;
+            DisplayCurrentCharacter();
+        }
     }
 
     void OnRightArrowPressed()
     {
-        currentCharacterIndex = currentCharacterIndex < characterPreviewSprites.Length - 1 ? currentCharacterIndex + 1 : 0;
-        DisplayCurrentCharacter();
+        if (currentCharacterIndex < unlockedCharacters)
+        {
+            currentCharacterIndex++;
+            DisplayCurrentCharacter();
+        }
     }
 }
