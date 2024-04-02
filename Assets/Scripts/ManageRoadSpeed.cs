@@ -56,6 +56,8 @@ public class ManageRoadSpeed : MonoBehaviour
         LoadPlayerPreferences();
         SpawnSelectedCharacter();
         UpdateScores();
+        // PlayerPrefs.SetInt("Coins", 0);
+        // PlayerPrefs.SetInt("SkillPoints", 0);
     }
 
     private void Update()
