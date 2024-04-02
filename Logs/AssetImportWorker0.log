@@ -201,3 +201,223 @@ Received Import Request.
 Start importing Assets/Scenes/Tara_Assets/Gold Coin - Single/Prefab/GoldCoin.prefab using Guid(fa2c57d3f28a5e6419393e8bc3eeb32a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43036082a301cc0540ad6de562e40320') in 0.025892 seconds 
   Import took 0.028943 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 26.366110 seconds.
+  path: Assets/Scenes/Tara_Assets/Gold Coin - Single/Prefab/GoldCoin.prefab
+  artifactKey: Guid(fa2c57d3f28a5e6419393e8bc3eeb32a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Tara_Assets/Gold Coin - Single/Prefab/GoldCoin.prefab using Guid(fa2c57d3f28a5e6419393e8bc3eeb32a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09185742e100b2b581421e1c951d5c9f') in 0.026964 seconds 
+  Import took 0.030366 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.379494 seconds.
+  path: Assets/Scenes/Tara_Assets/Gold Coin - Single/Prefab/GoldCoin.prefab
+  artifactKey: Guid(fa2c57d3f28a5e6419393e8bc3eeb32a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Tara_Assets/Gold Coin - Single/Prefab/GoldCoin.prefab using Guid(fa2c57d3f28a5e6419393e8bc3eeb32a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a63e5c96a1e320b9f68b4c48b6c56c0') in 0.032137 seconds 
+  Import took 0.035495 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.296830 seconds.
+  path: Assets/Scenes/Tara_Assets/Gold Coin - Single/Prefab/GoldCoin.prefab
+  artifactKey: Guid(fa2c57d3f28a5e6419393e8bc3eeb32a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Tara_Assets/Gold Coin - Single/Prefab/GoldCoin.prefab using Guid(fa2c57d3f28a5e6419393e8bc3eeb32a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fd8a4968d184a707deb78030ab0d0b6') in 0.032858 seconds 
+  Import took 0.036317 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001903 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2024-04-01 22:09:11.058 Unity[38872:1042245] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7fd38c2debb0 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Mono: successfully reloaded assembly
+- Completed reload, in  1.419 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1419ms)
+		BeginReloadAssembly (180ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (72ms)
+		EndReloadAssembly (1154ms)
+			LoadAssemblies (87ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (424ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (68ms)
+			SetupLoadedEditorAssemblies (410ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (148ms)
+				ProcessInitializeOnLoadAttributes (241ms)
+				ProcessInitializeOnLoadMethodAttributes (10ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.47 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1555 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 191.9 MB.
+System memory in use after: 191.4 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2065.
+Total: 3.844772 ms (FindLiveObjects: 0.165486 ms CreateObjectMapping: 0.061974 ms MarkObjects: 3.158913 ms  DeleteObjects: 0.457254 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003724 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.89 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2024-04-01 22:10:31.250 Unity[38872:1042245] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7fd38c2e3ac0 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Mono: successfully reloaded assembly
+- Completed reload, in  1.339 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1339ms)
+		BeginReloadAssembly (137ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (71ms)
+		EndReloadAssembly (1130ms)
+			LoadAssemblies (86ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (409ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (68ms)
+			SetupLoadedEditorAssemblies (404ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (146ms)
+				ProcessInitializeOnLoadAttributes (238ms)
+				ProcessInitializeOnLoadMethodAttributes (12ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.49 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1555 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 192.1 MB.
+System memory in use after: 191.6 MB.
+
+Unloading 27 unused Assets to reduce memory usage. Loaded Objects now: 2067.
+Total: 3.257725 ms (FindLiveObjects: 0.148705 ms CreateObjectMapping: 0.048704 ms MarkObjects: 2.657725 ms  DeleteObjects: 0.401827 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 192.306574 seconds.
+  path: Assets/Prefabs/Tara_Roads/Tara_Road1.prefab
+  artifactKey: Guid(638d621bb6abf4f4e99040ff6d80cfdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tara_Roads/Tara_Road1.prefab using Guid(638d621bb6abf4f4e99040ff6d80cfdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25bea3c7e59b49b4e4bd16df32ceb031') in 0.117174 seconds 
+  Import took 0.123474 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000260 seconds.
+  path: Assets/Prefabs/Tara_Roads/Tara_Road11.prefab
+  artifactKey: Guid(9530c58a71b42422fb3c667dd58316bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tara_Roads/Tara_Road11.prefab using Guid(9530c58a71b42422fb3c667dd58316bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b9d22bd6d1a4201abe1161fb5183259') in 0.092634 seconds 
+  Import took 0.098701 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000324 seconds.
+  path: Assets/Prefabs/Tara_Roads/Tara_Road2.prefab
+  artifactKey: Guid(f3258e17821924a42a1b518c2c507dee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tara_Roads/Tara_Road2.prefab using Guid(f3258e17821924a42a1b518c2c507dee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a5390fc5b81c66588ffe2111a100e5f') in 0.061190 seconds 
+  Import took 0.071015 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000265 seconds.
+  path: Assets/Prefabs/Tara_Roads/Tara_Road10.prefab
+  artifactKey: Guid(4b79b06a6af5f4d368ed7a5e399d0dd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tara_Roads/Tara_Road10.prefab using Guid(4b79b06a6af5f4d368ed7a5e399d0dd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9182be387dba56cbd374f243006911d7') in 0.048386 seconds 
+  Import took 0.054378 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000257 seconds.
+  path: Assets/Prefabs/Tara_Roads/Tara_Road4.prefab
+  artifactKey: Guid(d5fbcfd369d00476cb324dc3daf12b6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tara_Roads/Tara_Road4.prefab using Guid(d5fbcfd369d00476cb324dc3daf12b6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4daf1754442f6598bc655f4ace48e36b') in 0.048536 seconds 
+  Import took 0.057332 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000295 seconds.
+  path: Assets/Prefabs/Tara_Roads/Tara_Road5.prefab
+  artifactKey: Guid(73aeb8fef6f3b4f9aabadc06fdf10f07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tara_Roads/Tara_Road5.prefab using Guid(73aeb8fef6f3b4f9aabadc06fdf10f07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '159d89fccddac2cb7d989aabbbe2a6cb') in 0.044010 seconds 
+  Import took 0.051796 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000297 seconds.
+  path: Assets/Prefabs/Tara_Roads/Tara_Road6.prefab
+  artifactKey: Guid(0b6d890020f224253a2569883ba29bfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tara_Roads/Tara_Road6.prefab using Guid(0b6d890020f224253a2569883ba29bfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c614233a797e77caa1d85abae3b8f55') in 0.046075 seconds 
+  Import took 0.052355 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Assets/Prefabs/Tara_Roads/Tara_Road7.prefab
+  artifactKey: Guid(4ca15b02d8f89499bac4e6292418db98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tara_Roads/Tara_Road7.prefab using Guid(4ca15b02d8f89499bac4e6292418db98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ac786561b9b8cf3fff9e0f5184c7c17') in 0.039198 seconds 
+  Import took 0.045054 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000256 seconds.
+  path: Assets/Prefabs/Tara_Roads/Tara_Road3.prefab
+  artifactKey: Guid(bee5e4a7a19214fb4b1405c6df087281) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tara_Roads/Tara_Road3.prefab using Guid(bee5e4a7a19214fb4b1405c6df087281) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9a001a87615d6def7d64938d8cc1a99') in 0.043939 seconds 
+  Import took 0.050721 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000267 seconds.
+  path: Assets/Prefabs/Tara_Roads/Tara_Road8.prefab
+  artifactKey: Guid(f4647085e33ed4e44956502466f73976) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tara_Roads/Tara_Road8.prefab using Guid(f4647085e33ed4e44956502466f73976) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4df164b3ece8671c0fde4250399e1de7') in 0.049463 seconds 
+  Import took 0.055670 seconds .
+
