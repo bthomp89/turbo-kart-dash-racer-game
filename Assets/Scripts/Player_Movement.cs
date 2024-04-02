@@ -22,7 +22,8 @@ public class Player_Movement : MonoBehaviour
 
     private Vector3 invincibleScale = new Vector3(1.5f, 1.5f, 1.5f); // The scale when the player is invincible
 
-    ManageRoadSpeed manageRoadSpeed = new ManageRoadSpeed();
+
+
 
     void Start()
     {
@@ -101,13 +102,6 @@ public class Player_Movement : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
 
-        if (other.gameObject.CompareTag("Coin"))
-        {
-            Debug.Log("coin collision");
-            Destroy(other.gameObject);
-            manageRoadSpeed.updateCoins();
-        }
-
         if (other.gameObject.CompareTag("Obstacle") && isInvincible)
         {
             // If the player is invincible and hits an obstacle, turn off invincibility
@@ -115,7 +109,7 @@ public class Player_Movement : MonoBehaviour
             Destroy(other.gameObject);
             transform.localScale = originalScale;
             StopAllCoroutines();
-
+        
             // Stop the invincibility coroutine in case it's still running
             StopAllCoroutines();
         }

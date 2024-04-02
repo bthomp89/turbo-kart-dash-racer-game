@@ -10,7 +10,6 @@ TagManager:
   - Obstacle
   - StartText
   - Invis_Floor
-  - Coin
   layers:
   - Default
   - TransparentFX
