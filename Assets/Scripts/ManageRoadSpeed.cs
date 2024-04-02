@@ -22,10 +22,11 @@ public class ManageRoadSpeed : MonoBehaviour
     private Player_Movement motor;
     private GameObject startText;
 
-    public Text scoreText, highScoreText, speedText, skillPointsText;
+    public Text scoreText, highScoreText, speedText, skillPointsText, coinsText;
     private float score, highScore;
 
     private int skillPoints;
+    private int coins;
 
     private float lateralSpeed, jumpPower;
     private float duckTime;
@@ -93,6 +94,7 @@ public class ManageRoadSpeed : MonoBehaviour
 
             //score calculator logic
             score = (Time.time - gameStartTime) * 10;
+            coins = PlayerPrefs.GetInt("Coins", 0);
 
             //update highscore logic
             if (score > highScore)
@@ -104,8 +106,16 @@ public class ManageRoadSpeed : MonoBehaviour
                 //check if highscore is eligble for SP's
                 isHighScoreEligble(highScore);
             }
+
             UpdateScores();
         }
+    }
+
+    public void updateCoins()
+    {
+        coins = PlayerPrefs.GetInt("Coins", 0);
+        coins += 10;
+        PlayerPrefs.SetInt("Coins", coins);
     }
 
     public void StartGame()
@@ -137,13 +147,16 @@ public class ManageRoadSpeed : MonoBehaviour
 
     public void UpdateScores()
     {
-        //update on screen texts
+        // Update on screen texts
         scoreText.text = "Score: " + score.ToString("F2");
         highScoreText.text = "High Score: " + highScore.ToString("F2");
         speedText.text = "Speed: " + (-10 * CurrentSpeed).ToString("F2") + "mph";
-        skillPointsText.text = "Skill Points: " + skillPoints.ToString(); //change onscreen text
+        skillPointsText.text = "XP: " + skillPoints.ToString(); //change onscreen text
+        coinsText.text = "Coins: " + coins.ToString(); //change onscreen text
 
     }
+
+
 
     private void LoadPlayerPreferences()
     {
@@ -154,6 +167,7 @@ public class ManageRoadSpeed : MonoBehaviour
         duckSlider = PlayerPrefs.GetInt("DuckSlider", 1);
         jumpSlider = PlayerPrefs.GetInt("JumpSlider", 1);
         lsSlider = PlayerPrefs.GetInt("LsSlider", 1);
+        coins = PlayerPrefs.GetInt("Coins", 0);
 
         updateAttributes(controlSlider, duckSlider, jumpSlider, lsSlider);
     }

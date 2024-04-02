@@ -22,8 +22,7 @@ public class Player_Movement : MonoBehaviour
 
     private Vector3 invincibleScale = new Vector3(1.5f, 1.5f, 1.5f); // The scale when the player is invincible
 
-
-
+    ManageRoadSpeed manageRoadSpeed = new ManageRoadSpeed();
 
     void Start()
     {
@@ -104,7 +103,8 @@ public class Player_Movement : MonoBehaviour
 
         if (other.gameObject.CompareTag("Coin"))
         {
-
+            manageRoadSpeed.updateCoins();
+            Destroy(other.gameObject);
         }
 
         if (other.gameObject.CompareTag("Obstacle") && isInvincible)
