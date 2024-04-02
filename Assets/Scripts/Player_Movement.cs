@@ -103,8 +103,9 @@ public class Player_Movement : MonoBehaviour
 
         if (other.gameObject.CompareTag("Coin"))
         {
-            manageRoadSpeed.updateCoins();
+            Debug.Log("coin collision");
             Destroy(other.gameObject);
+            manageRoadSpeed.updateCoins();
         }
 
         if (other.gameObject.CompareTag("Obstacle") && isInvincible)
